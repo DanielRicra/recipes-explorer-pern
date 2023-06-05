@@ -1,5 +1,6 @@
 import express from 'express';
 import morgan from 'morgan';
+import { recipeRoutes } from './routes/index.js';
 
 const app = express();
 
@@ -21,8 +22,10 @@ app.use((_req, res, next) => {
 });
 
 app.get('/', (_req, res) => {
-   res.send('Welcome to the recipe API');
+   res.send('<h2>Welcome to the recipe API</h2>');
 });
+
+app.use('/api/v1/recipes', recipeRoutes);
 
 app.use((err, _req, res, _next) => {
    const status = err.status || 500;
