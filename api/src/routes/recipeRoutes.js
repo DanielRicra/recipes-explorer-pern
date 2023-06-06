@@ -1,12 +1,11 @@
-import { Router } from "express";
-import recipeController from "../controllers/recipeController.js";
-
+import { Router } from 'express';
+import recipeController from '../controllers/recipeController.js';
 
 const router = Router();
 
 router.get('/', recipeController.getAllRecipes);
 
-router.get('/search', recipeController.searchRecipes);
+router.get('/search', recipeController.getAllRecipes);
 
 router.get('/:recipeId', recipeController.getRecipeById);
 
