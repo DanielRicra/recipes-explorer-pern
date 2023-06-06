@@ -1,7 +1,7 @@
 import 'dotenv/config';
 import express from 'express';
 import morgan from 'morgan';
-import { recipeRoutes } from './routes/index.js';
+import { dietRouters, recipeRoutes } from './routes/index.js';
 import { cors, errorHandler } from './middlewares/index.js';
 
 const app = express();
@@ -16,6 +16,7 @@ app.get('/', (_req, res) => {
 });
 
 app.use('/api/v1/recipes', recipeRoutes);
+app.use('/api/v1/diets', dietRouters);
 
 app.use(errorHandler);
 
