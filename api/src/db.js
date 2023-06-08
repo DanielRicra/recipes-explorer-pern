@@ -7,6 +7,7 @@ import {
    defineIngredient,
    defineAnalyzedInstruction,
    defineStep,
+   defineRecipeIngredient
 } from './models/index.js';
 
 dotenv.config();
@@ -29,12 +30,13 @@ const Diet = defineDiet(sequelize, DataTypes);
 const Ingredient = defineIngredient(sequelize, DataTypes);
 const AnalyzedInstruction = defineAnalyzedInstruction(sequelize, DataTypes);
 const Step = defineStep(sequelize, DataTypes);
+const RecipeIngredient = defineRecipeIngredient(sequelize, DataTypes);
 
 Recipe.belongsToMany(Diet, { through: 'recipe_diet' });
 Diet.belongsToMany(Recipe, { through: 'recipe_diet' });
 
-Recipe.belongsToMany(Ingredient, { through: 'recipe_ingredient' });
-Ingredient.belongsToMany(Recipe, { through: 'recipe_ingredient' });
+Recipe.belongsToMany(Ingredient, { through: RecipeIngredient });
+Ingredient.belongsToMany(Recipe, { through: RecipeIngredient });
 
 Recipe.hasMany(AnalyzedInstruction, { foreignKey: 'recipeId' });
 AnalyzedInstruction.belongsTo(Recipe, { foreignKey: 'recipeId' });
@@ -46,6 +48,7 @@ db.sequelize = sequelize;
 db.Diet = Diet;
 db.Ingredient = Ingredient;
 db.Recipe = Recipe;
+db.RecipeIngredient = RecipeIngredient;
 db.Step = Step;
 db.AnalyzedInstruction = AnalyzedInstruction;
 
