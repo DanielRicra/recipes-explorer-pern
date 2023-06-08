@@ -14,10 +14,18 @@ const defineRecipe = (sequelize, DataTypes) => {
          allowNull: false,
       },
       summary: {
-         type: DataTypes.STRING,
+         type: DataTypes.TEXT,
          allowNull: false,
       },
       healthScore: {
+         type: DataTypes.INTEGER,
+         allowNull: false,
+      },
+      readyInMinutes: {
+         type: DataTypes.INTEGER,
+         allowNull: false,
+      },
+      servings: {
          type: DataTypes.INTEGER,
          allowNull: false,
       }
