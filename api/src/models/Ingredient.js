@@ -18,14 +18,6 @@ const defineIngredient = (sequelize, DataTypes) => {
          type: DataTypes.STRING,
          allowNull: false,
       },
-      amount: {
-         type: DataTypes.FLOAT,
-         allowNull: false,
-      },
-      unit: {
-         type: DataTypes.STRING,
-         allowNull: false,
-      },
    });
 };
 
