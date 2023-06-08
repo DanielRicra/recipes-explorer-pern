@@ -24,7 +24,6 @@ const sequelize = new Sequelize(
    }
 );
 
-// TODO: analyze the need of Ingredient model.
 const Recipe = defineRecipe(sequelize, DataTypes);
 const Diet = defineDiet(sequelize, DataTypes);
 const Ingredient = defineIngredient(sequelize, DataTypes);
