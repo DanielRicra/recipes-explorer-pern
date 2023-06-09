@@ -38,10 +38,10 @@ Diet.belongsToMany(Recipe, { through: 'recipe_diet' });
 Recipe.belongsToMany(Ingredient, { through: RecipeIngredient });
 Ingredient.belongsToMany(Recipe, { through: RecipeIngredient });
 
-Recipe.hasMany(AnalyzedInstruction, { foreignKey: 'recipeId' });
+Recipe.AnalyzedInstruction = Recipe.hasMany(AnalyzedInstruction, { foreignKey: 'recipeId' });
 AnalyzedInstruction.belongsTo(Recipe, { foreignKey: 'recipeId' });
 
-AnalyzedInstruction.hasMany(Step, { foreignKey: 'analyzedInstructionId' });
+AnalyzedInstruction.Step = AnalyzedInstruction.hasMany(Step, { foreignKey: 'analyzedInstructionId' });
 Step.belongsTo(AnalyzedInstruction, { foreignKey: 'analyzedInstructionId' });
 
 db.sequelize = sequelize;
