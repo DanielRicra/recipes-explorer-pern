@@ -8,7 +8,7 @@ const defineIngredient = (sequelize, DataTypes) => {
       aisle: DataTypes.STRING,
       image: {
          type: DataTypes.STRING,
-         allowNull: true,
+         allowNull: false,
       },
       consistency: {
          type: DataTypes.ENUM('solid', 'liquid', 'gas'),
