@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "jest",
+    "test": "set NODE_OPTIONS=--experimental-vm-modules && jest",
+    "test:diet": "set NODE_OPTIONS=--experimental-vm-modules && jest ./tests/dietController.test.js",
     "start": "node src/index.js",
     "dev": "nodemon src/index.js"
   },
