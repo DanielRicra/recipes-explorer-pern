@@ -1,5 +1,10 @@
 import recipeService from '../services/recipeService.js';
 import { HTTP_STATUS } from '../utils/constants.js';
+import {
+   validateRecipe,
+   validateAnalyzedInstructions,
+   validateExtendedIngredients,
+} from '../utils/helpers.js';
 
 const getAllRecipes = async (req, res, next) => {
    const { name, offset = 0, limit = 10 } = req.query;
@@ -9,17 +14,17 @@ const getAllRecipes = async (req, res, next) => {
 
       const results = data.results.map((recipe) => {
          return {
-               diets: recipe.diets,
-               dishTypes: recipe.dishTypes,
-               healthScore: recipe.healthScore,
-               id: recipe.id,
-               image: recipe.image,
-               nutrients: recipe.nutrition.nutrients,
-               readyInMinutes: recipe.readyInMinutes,
-               summary: recipe.summary,
-               title: recipe.title,
+            diets: recipe.diets,
+            dishTypes: recipe?.dishTypes || [],
+            healthScore: recipe.healthScore,
+            id: recipe.id,
+            image: recipe.image,
+            nutrients: recipe.nutrition.nutrients,
+            readyInMinutes: recipe.readyInMinutes,
+            summary: recipe.summary,
+            title: recipe.title,
          };
-      })
+      });
 
       res.status(HTTP_STATUS.OK).json({
          results,
@@ -44,8 +49,49 @@ const getRecipeById = async (req, res, next) => {
    }
 };
 
-const createNewRecipe = (req, res) => {
-   res.send('Create new recipe');
+const createNewRecipe = async (req, res, next) => {
+   const {
+      name,
+      readyInMinutes,
+      healthScore,
+      image,
+      summary,
+      servings,
+      dietsId = ['omnivore'],
+      extendedIngredients = [],
+      analyzedInstructions = [],
+   } = req.body;
+
+   try {
+      validateRecipe({
+         name,
+         readyInMinutes,
+         healthScore,
+         image,
+         summary,
+         servings,
+      });
+      validateExtendedIngredients(extendedIngredients);
+      validateAnalyzedInstructions(analyzedInstructions);
+
+      const newRecipe = await recipeService.createNewRecipe(
+         {
+            name,
+            readyInMinutes,
+            healthScore,
+            image,
+            summary,
+            servings,
+         },
+         dietsId,
+         extendedIngredients,
+         analyzedInstructions
+      );
+
+      res.status(HTTP_STATUS.CREATED).json(newRecipe);
+   } catch (error) {
+      next(error);
+   }
 };
 
 const updateRecipe = (req, res) => {
