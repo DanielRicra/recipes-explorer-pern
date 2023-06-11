@@ -7,14 +7,20 @@ const LandingRecipeCard = ({ image, title, ingredients, calories }) => {
             <img
                src={image}
                alt='Food'
-               width={50}
-               height={50}
+               width={44}
+               height={44}
                title={`${title} image`}
             />
-            <div className='flex-start column'>
+            <div className='landing-recipe-text'>
                <h3>{title}</h3>
-               <div className='center flex-end'>
-                  <FlameIcon width={18} height={18} stroke='#ff5a00' fill='#ffe808' /> <p>{calories}</p>
+               <div title='calories'>
+                  <FlameIcon
+                     width={18}
+                     height={18}
+                     stroke='#ff5a00'
+                     fill='#ffe808'
+                  />{' '}
+                  <p>{calories}</p>
                </div>
             </div>
          </div>
