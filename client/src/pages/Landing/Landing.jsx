@@ -3,8 +3,15 @@ import landingImg from '../../assets/dish.webp';
 import recipeOne from '../../assets/Resize_landing-card-one.webp';
 import recipeTwo from '../../assets/Resize_landing-recipe-card-two.webp';
 import LandingRecipeCard from './LandingRecipeCard';
+import { useNavigate } from 'react-router-dom';
 
 const Landing = () => {
+   const navigate = useNavigate();
+
+   const goToHome = () => {
+      navigate('/home');
+   };
+
    return (
       <div className='landing' style={{ minHeight: window.innerHeight - 93 }}>
          <div className='landing-info'>
@@ -15,7 +22,7 @@ const Landing = () => {
                enjoy the best recipes ever!
             </p>
 
-            <button type='button' className='button'>
+            <button type='button' className='button' onClick={goToHome}>
                Start searching
             </button>
          </div>
