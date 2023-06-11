@@ -1,0 +1,41 @@
+@import './variables.less';
+
+.button {
+   padding: .8rem 1.5rem;
+   border-radius: 8px;
+   font-size: 16px;
+   font-weight: 500;
+   font-family: @baseFonFamily;
+   line-height: 1.4;
+   border: 1px solid @primaryColor;
+   background-color: @primaryColor;
+   color: @secondaryColor;
+   transition: all ease-in 250ms;
+   text-transform: capitalize;
+   align-self: flex-start;
+   margin-top: 2rem;
+   
+   &:hover {
+      cursor: pointer;
+      filter: brightness(110%);
+   }
+}
+
+.center {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.flex-start {
+   display: flex;
+   justify-content: flex-start;
+   align-items: flex-start;
+}
+
+.column {
+   flex-direction: column;
+}
+.flex-end {
+   align-items: flex-end;
+}
