@@ -19,9 +19,13 @@
       line-height: 1.4;
       cursor: pointer;
       position: relative;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
 
       &:before {
          content: "";
+         display: inline-block;
          height: @size;
          width: @size;
          border: 2px solid @primaryColor;
