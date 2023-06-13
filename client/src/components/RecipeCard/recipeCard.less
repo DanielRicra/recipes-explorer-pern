@@ -1,0 +1,84 @@
+@import '../../less/variables.less';
+
+.recipe-card {
+   border-radius: 8px;
+   background-color: @whiteColor;
+   overflow: hidden;
+   cursor: pointer;
+
+   figure {
+      margin: 0;
+      padding: 0;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+
+      img {
+         width: 100%;
+         height: auto;
+         transform-origin: center;
+         transition: transform 300ms ease-in-out;
+      }
+   }
+
+   .recipe-card-content {
+      padding: 0.5rem 1rem;
+
+      .recipe-card-title {
+         font-size: 20px;
+         font-weight: 500;
+         margin-bottom: .5rem;
+      }
+
+      .recipe-card-info {
+         display: flex;
+         gap: 1rem;
+         margin-bottom: .5rem;
+         font-size: 16px;
+
+         p {
+            display: flex;
+            align-items: center;
+         }
+
+         svg {
+            width: 18px;
+            height: 18px;
+         }
+      }
+
+      .recipe-card-diets {
+         font-style: italic;
+         font-size: 14px;
+         display: flex;
+         flex-wrap: wrap;
+         gap: 0 .8rem;
+
+         span {
+            position: relative;
+            color: @base100;
+
+            &::after {
+               content: '';
+               position: absolute;
+               height: 6px;
+               width: 6px;
+               border-radius: 50%;
+               background-color: @grayColor;
+               display: block;
+               right: -10px;
+               top: 7px;
+            }
+
+            &:last-child::after {
+               content: none;
+            }
+         }
+      }
+   }
+
+   &:hover {
+      img {
+         transform: scale(1.1);
+      }
+   }
+}
