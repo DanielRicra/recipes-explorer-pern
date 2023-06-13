@@ -1,0 +1,49 @@
+@import '../../less/variables.less';
+@transition: all 300ms ease-in;
+
+.multi-select-accordion {
+   display: flex;
+   flex-direction: column;
+   gap: .5rem;
+   overflow: hidden;
+   
+   .filter-accordion-title {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      
+      input {
+         opacity: 0;
+         z-index: -1;
+         position: absolute;
+      }
+   
+      svg {
+         stroke: @base100;
+         transition:@transition;
+      }
+   }
+   .filter-accordion-title:has(input:checked) {
+      svg {
+         transform: rotate(180deg);
+      }
+   
+      + .filter-accordion-content {
+         height: var(--height);
+         gap: .5rem;
+         opacity: 1;
+      }
+   }
+   
+   .filter-accordion-content {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      height: 0;
+      padding: 0;
+      transition: @transition;
+      opacity: 0;
+   }
+}
