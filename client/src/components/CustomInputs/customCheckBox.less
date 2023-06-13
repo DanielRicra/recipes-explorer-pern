@@ -1,0 +1,53 @@
+@import '../../less/variables.less';
+@size: 22px;
+
+.checkbox-wrapper {
+   position: relative;
+
+   .input-checkbox {
+      visibility: hidden;
+      position: absolute;
+   }
+
+   input:checked~svg {
+      height: calc(@size * 0.6);
+      animation: draw-checkbox ease-in-out 0.2s forwards;
+   }
+
+   label {
+      color: @baseColor;
+      line-height: 1.4;
+      cursor: pointer;
+      position: relative;
+
+      &:before {
+         content: "";
+         height: @size;
+         width: @size;
+         border: 2px solid @primaryColor;
+         border-radius: 6px;
+         transition: 0.15s all ease-out;
+      }
+   }
+
+   svg {
+      stroke: @primaryColor;
+      stroke-width: 4px;
+      height: 0;
+      width: calc(@size * 0.6);
+      position: absolute;
+      left: calc(@size * 0.21);
+      top: calc(@size * 0.2);
+      stroke-dasharray: 33;
+   }
+}
+
+@keyframes draw-checkbox {
+   0% {
+      stroke-dashoffset: 33;
+   }
+
+   100% {
+      stroke-dashoffset: 0;
+   }
+}
