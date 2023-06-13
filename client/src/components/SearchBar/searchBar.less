@@ -1,16 +1,41 @@
-@import '../../variables.less';
+@import '../../less/variables.less';
 
 .search-bar {
    border-radius: 8px;
    display: flex;
    align-items: center;
    border: 1px solid @primaryColor;
-   padding: .4rem;
-
+   font-size: 18px;
+   gap: .4rem;
+   min-width: 420px;
+   margin-bottom: 1rem;
+   overflow: hidden;
+   background-color: @whiteColor;
+   
    input {
+      padding: .7rem 1rem;
       font-family: @baseFonFamily;
       border: none;
       outline: none;
       font-size: 16px;
+      background-color: inherit;
+      flex: 1;
+   }
+
+   button {
+      border: none;
+      padding: 0;
+      background-color: transparent;
+      height: 100%;
+      width: 48px;
+
+      &:hover {
+         cursor: pointer;
+         background-color: @primaryColor;
+
+         svg {
+            stroke: #fff;
+         }
+      }
    }
 }

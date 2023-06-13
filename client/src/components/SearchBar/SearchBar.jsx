@@ -1,12 +1,19 @@
-import './searchBar.less';
 import { ReactComponent as SearchIcon } from '../../assets/search-icon.svg';
+import './searchBar.less';
 
 const SearchBar = () => {
+
+   const handleSubmit = (event) => {
+      event.preventDefault();
+   };
+
    return (
-      <div className='search-bar'>
-         <SearchIcon strokeWidth='1' width={20} height={20} fill='#fff' />
+      <form className='search-bar' onSubmit={handleSubmit}>
          <input type='text' placeholder='Search...' />
-      </div>
+         <button type='submit' title='search'>
+            <SearchIcon strokeWidth='1.5' width={20} height={20} />
+         </button>
+      </form>
    );
 };
 
