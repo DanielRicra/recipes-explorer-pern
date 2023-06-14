@@ -47,7 +47,7 @@ const NavBar = () => {
                onMouseEnter={moveBackdrop}
                onMouseLeave={hideBackdrop}
             >
-               <NavLink to='/recipes'>Recipes</NavLink>
+               <NavLink to='/create'>Create Recipe</NavLink>
             </li>
             <li
                className='nav-link'
