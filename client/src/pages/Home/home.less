@@ -1,0 +1,48 @@
+@import '../../less/variables.less';
+
+.home { 
+   display: flex;
+   flex-direction: column;
+   padding: 0 @mainPadding 5rem;
+   min-height: calc(100vh - 90px);
+   background-color: lighten(@grayColor, 18%);
+
+   .home-search-bar {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin: 1rem 0;
+   }
+
+   .home-content {
+      display: flex;
+      gap: 2rem;
+   }
+
+   .home-recipe-results {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      .home-recipe-results-header {
+         background-color: @whiteColor;
+         padding: 1rem;
+         border-radius: 8px;
+         flex: 1;
+         display: flex;
+         justify-content: space-between;
+      }
+
+      .home-recipe-results-pagination {
+         width: 100%;
+         display: flex;
+         justify-content: center;
+      }
+   }
+
+   .home-filters-side-bar {
+      max-width: 280px;
+      width: 100%;
+   }
+}
