@@ -1,0 +1,56 @@
+@import '../../less/variables.less';
+
+.pagination {
+   list-style: none;
+   display: flex;
+   margin-bottom: 1rem;
+   align-items: center;
+
+   .page-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      span {
+         display: flex;
+         width: 30px;
+         height: 30px;
+         justify-content: center;
+         align-items: center;
+         aspect-ratio: 1;
+         padding: .5rem 0;
+         border-radius: 8px;
+         font-size: 16px;
+         color: @base200;
+         cursor: pointer;
+
+         &:hover {
+            background-color: lighten(@grayColor, 8%);
+         }
+
+         &.active {
+            background-color: @primaryColor;
+            color: @secondaryColor;
+            font-weight: 500;
+         }
+
+         &.disabled {
+            cursor: not-allowed;
+            
+
+            &:hover {
+               background-color: transparent;
+            }
+
+            svg {
+               color: @grayColor;
+            }
+         }
+
+         svg {
+            width: 20px;
+            height: 20px;
+         }
+      }
+   }
+}
