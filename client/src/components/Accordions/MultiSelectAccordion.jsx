@@ -2,15 +2,15 @@ import { ReactComponent as ChevronDown } from '../../assets/chevron-down.svg';
 import CustomCheckBox from '../CustomInputs/CustomCheckBox';
 import './index.less';
 
-const MultiSelectAccordion = ({ addToSelectedFilters, title, options }) => {
+const MultiSelectAccordion = ({ addToSelectedFilters, title, options, styles }) => {
    return (
-      <div className='multi-select-accordion'>
+      <div className='multi-select-accordion' style={styles}>
          <label
             className='filter-accordion-title'
             htmlFor={`accordion-title-${title}`}
          >
             <input type='checkbox' name='accordion-title' id={`accordion-title-${title}`} />
-            <h2>{title}</h2>
+            <h3 className='filter-accordion-title-text'>{title}</h3>
             <ChevronDown />
          </label>
 
