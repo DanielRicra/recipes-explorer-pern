@@ -1,6 +1,6 @@
 import { ReactComponent as ChevronDown } from '../../assets/chevron-down.svg';
 import CustomCheckBox from '../CustomInputs/CustomCheckBox';
-import './index.less';
+import './multiSelectAccordion.less';
 
 const MultiSelectAccordion = ({ addToSelectedFilters, title, options, styles }) => {
    return (
