@@ -1,0 +1,39 @@
+@import '../../less/variables.less';
+
+.text-field-label {
+   font-size: 16px;
+   margin-bottom: .3rem;
+   font-weight: 500;
+   text-transform: capitalize;
+}
+
+.text-field-input,
+.text-field-textarea {
+   padding: .6rem;
+   border-radius: 8px;
+   font-size: 16px;
+   border: 1px solid @primaryColor;
+   font-family: @baseFonFamily;
+
+   &:focus {
+      outline: 2px solid @primaryColor;
+   }
+
+   &.error {
+      border-color: @error;
+      outline-color: @error;
+   }
+}
+
+.text-field-textarea {
+   min-height: 50px;
+   resize: vertical;
+   max-height: 200px;
+}
+
+.text-field-error-message {
+   color: @error;
+   margin-top: 3px;
+   font-size: 15px;
+   font-style: italic;
+}
