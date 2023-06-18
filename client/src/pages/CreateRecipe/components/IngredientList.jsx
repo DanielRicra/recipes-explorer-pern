@@ -1,12 +1,12 @@
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 
 import { ReactComponent as IconPlus } from '../../../assets/plus.svg';
 import { ReactComponent as IconX } from '../../../assets/x.svg';
 import IngredientModalForm from './IngredientModalForm';
+import { ACTION_TYPES } from '../recipeFormActionTypes';
 
-const IngredientList = () => {
+const IngredientList = ({ extendedIngredients, dispatch }) => {
    const modalRef = useRef(null);
-   const [ingredients, setIngredients] = useState([]);
 
    const openModal = () => {
       modalRef.current?.showModal();
@@ -17,14 +17,12 @@ const IngredientList = () => {
    };
 
    const addIngredient = (ingredient) => {
-      setIngredients((prev) => [...prev, ingredient]);
+      dispatch({ type: ACTION_TYPES.SET_EXTENDED_INGREDIENT, payload: ingredient });
       closeModal();
    };
 
    const removeIngredient = (ingredientName) => {
-      setIngredients((prev) =>
-         prev.filter((ingredient) => ingredient.name !== ingredientName)
-      );
+      dispatch({ type: ACTION_TYPES.REMOVE_EXTENDED_INGREDIENT, payload: ingredientName });
    };
 
    return (
@@ -33,26 +31,26 @@ const IngredientList = () => {
             <h3>Ingredients</h3>
 
             <div className='ingredient-list'>
-               {ingredients.map((ingredient, index) => (
+               {extendedIngredients.map((eIngredient, index) => (
                      <div key={index} className='ingredient-item'>
                         <img
-                           src={ingredient.image}
+                           src={eIngredient.image}
                            alt='ingredient'
-                           title={`${ingredient.name} image`}
+                           title={`${eIngredient.name} image`}
                            width={100}
                            height={100}
                         />
                         <div className='ingredient-info'>
-                           <p>{ingredient.name}</p>
+                           <p>{eIngredient.name}</p>
                            <p>
-                              {ingredient.amount} {ingredient.unit}
+                              {eIngredient.amount} {eIngredient.unit}
                            </p>
                         </div>
 
                         <div className='ingredient-buttons'>
                            <button
                               type='button'
-                              onClick={() => removeIngredient(ingredient.name)}
+                              onClick={() => removeIngredient(eIngredient.name)}
                            >
                               <IconX />
                            </button>
