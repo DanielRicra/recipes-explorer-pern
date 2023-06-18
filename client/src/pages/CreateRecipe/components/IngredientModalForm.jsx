@@ -5,9 +5,11 @@ import TextField from '../../../components/CustomInputs/TextField';
 
 const initialIngredientData = {
    name: '',
-   amount: '',
-   unit: '',
    image: '',
+   recipe_ingredient: {
+      amount: '',
+      unit: '',
+   }
 };
 
 const IngredientModalForm = ({ closeModal, addIngredient }) => {
@@ -16,7 +18,18 @@ const IngredientModalForm = ({ closeModal, addIngredient }) => {
 
    const handleChange = (e) => {
       const { name, value } = e.target;
-      setIngredientData((prev) => ({ ...prev, [name]: value }));
+
+      if (name === 'amount' || name === 'unit') {
+         setIngredientData((prev) => ({
+            ...prev,
+            recipe_ingredient: {
+               ...prev.recipe_ingredient,
+               [name]: value,
+            },
+         }));
+      } else {
+         setIngredientData((prev) => ({ ...prev, [name]: value }));
+      }
 
       const errors = validateIngredient({ [name]: value });
 
@@ -47,6 +60,7 @@ const IngredientModalForm = ({ closeModal, addIngredient }) => {
                error={!!errors?.name}
                handleChange={handleChange}
                placeholder='Ingredient name'
+               label='Name'
             />
          </div>
 
@@ -59,6 +73,7 @@ const IngredientModalForm = ({ closeModal, addIngredient }) => {
                error={!!errors?.image}
                handleChange={handleChange}
                placeholder='Image URL'
+               label='Image'
             />
          </div>
 
@@ -66,11 +81,12 @@ const IngredientModalForm = ({ closeModal, addIngredient }) => {
             <TextField
                errorMessage={errors?.amount}
                name='amount'
-               value={ingredientData.amount}
+               value={ingredientData.recipe_ingredient.amount}
                type='number'
                error={!!errors?.amount}
                handleChange={handleChange}
                placeholder='Amount: 1, 2, 3, etc'
+               label='Amount'
             />
          </div>
 
@@ -78,11 +94,12 @@ const IngredientModalForm = ({ closeModal, addIngredient }) => {
             <TextField
                errorMessage={errors?.unit}
                name='unit'
-               value={ingredientData.unit}
+               value={ingredientData.recipe_ingredient.unit}
                type='text'
                error={!!errors?.unit}
                handleChange={handleChange}
                placeholder='Unit: g, kg, ml, tablespoon, etc.'
+               label='Unit'
             />
          </div>
 
