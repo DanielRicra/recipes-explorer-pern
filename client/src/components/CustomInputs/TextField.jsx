@@ -6,14 +6,15 @@ const TextField = ({
    error = false,
    errorMessage,
    name,
-   type,
+   label,
+   type = 'text',
    autoFocus = false,
    placeholder,
 }) => {
    return (
       <>
          <label htmlFor={name} className='text-field-label'>
-            {name}
+            {label}
          </label>
          <input
             className={error ? 'text-field-input error' : 'text-field-input'}
