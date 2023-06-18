@@ -1,33 +1,39 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 
 import TextField from '../../../components/CustomInputs/TextField';
 import { ReactComponent as IconPlus } from '../../../assets/plus.svg';
+import { ReactComponent as IconX } from '../../../assets/x.svg';
+import { ACTION_TYPES } from '../recipeFormActionTypes';
 
-const Instructions = () => {
-   const [instruction, setInstruction] = useState({ name: '', steps: [] });
-   const [step, setStep] = useState({ step: '', number: 1 });
+const Instructions = ({ instructions, dispatch }) => {
+   const stepRef = useRef(null);
    const [stepError, setStepError] = useState(false);
 
    const handleInstructionNameChange = (e) => {
-      setInstruction((prev) => ({ ...prev, name: e.target.value }));
-   };
-
-   const handleStepChange = (e) => {
-      setStep((prev) => ({ ...prev, step: e.target.value }));
+      dispatch({
+         type: ACTION_TYPES.SET_INSTRUCTIONS_NAME,
+         payload: e.target.value,
+      });
    };
 
    const handleAddStep = () => {
-      if (step.step.trim() === '') {
+      if (!stepRef.current || stepRef.current.value.trim() === '') {
          setStepError(true);
          return;
       }
 
-      setInstruction((prev) => ({
-         ...prev,
-         steps: [...prev.steps, step],
-      }));
-      setStep((prev) => ({ step: '', number: prev.number + 1 }));
+      const number = instructions.steps.length + 1;
+      dispatch({
+         type: ACTION_TYPES.ADD_STEP,
+         payload: { number, step: stepRef.current.value.trim() },
+      });
+
+      stepRef.current.value = '';
       setStepError(false);
+   };
+
+   const handleRemoveStep = (number) => {
+      dispatch({ type: ACTION_TYPES.REMOVE_STEP, payload: number });
    };
 
    return (
@@ -37,37 +43,57 @@ const Instructions = () => {
          <div className='input-box'>
             <TextField
                name='name'
-               placeholder={'Name'}
-               value={instruction.name}
+               placeholder='Name (Optional)'
+               value={instructions.name}
                handleChange={handleInstructionNameChange}
+               label='name (Optional)'
             />
          </div>
 
          <h4>Steps</h4>
 
          <div className='steps'>
-            {instruction.steps.map((step) => (
+            {instructions.steps.map((step) => (
                <div key={step.number} className='step'>
                   <span>{step.number}.</span>
-                  <p>{step.step}</p>
+                  <div className='step-content'>
+                     <p>{step.step}</p>
+
+                     <div className='step-buttons'>
+                        <button
+                           onClick={() => handleRemoveStep(step.number)}
+                           type='button'
+                           title='Remove step'
+                           className='icon-button delete-button'
+                        >
+                           <IconX />
+                        </button>
+                     </div>
+                  </div>
                </div>
             ))}
          </div>
 
          <div className='add-step-form'>
-            <p>{step.number}.</p>
+            <p>{instructions.steps.length + 1}.</p>
             <div className='input-box'>
                <input
                   name='step'
                   placeholder={'Description'}
                   className={stepError ? 'error' : ''}
-                  value={step.step}
-                  onChange={handleStepChange}
+                  ref={stepRef}
                />
-               {stepError && <p className='error-message'>Step cannot be empty</p>}
+               {stepError && (
+                  <p className='error-message'>Step cannot be empty</p>
+               )}
             </div>
             <div>
-               <button onClick={handleAddStep} type='button' title='Add step'>
+               <button
+                  onClick={handleAddStep}
+                  type='button'
+                  title='Add step'
+                  className='icon-button'
+               >
                   <IconPlus />
                </button>
             </div>
