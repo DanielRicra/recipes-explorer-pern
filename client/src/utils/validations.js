@@ -1,7 +1,7 @@
 function getEmptyFieldErrors(object) {
    let errors = {};
    Object.keys(object).some((key) => {
-      const value = object[key];
+      const value = object[key].toString();
       if (value.trim() === '') {
          errors[key] = `${key} is required`;
       }
