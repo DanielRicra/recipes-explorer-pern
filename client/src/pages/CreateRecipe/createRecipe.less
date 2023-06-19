@@ -1,0 +1,356 @@
+@import '../../less/variables.less';
+@import '../../less/mixins.less';
+
+h3 {
+   font-size: 18px;
+   font-weight: 400;
+   margin-bottom: 1rem;
+}
+
+.flex-column {
+   display: flex;
+   flex-direction: column;
+   gap: .3rem;
+   flex: 1;
+   justify-content: flex-start;
+}
+
+.error-message {
+   font-size: 15px;
+   font-style: italic;
+   color: @error;
+   font-weight: 500;
+}
+
+.create-recipe {
+   padding: 1.5rem .4rem;
+   display: flex;
+   flex-direction: column;
+   place-items: center;
+   background-color: lighten(@grayColor, 18%);
+   @media @smallDesktop {
+      padding: 2.5rem @mainPadding 6rem;
+   }
+
+   h2 {
+      margin: 1rem 0;
+      font-size: 32px;
+      font-weight: 400;
+   }
+
+   .create-recipe-form {
+      gap: 3.4rem;
+      width: 100%;
+      margin-top: 2rem;
+      display: grid;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      background-color: @whiteColor;
+      padding: 2rem;
+      border-radius: 8px;
+
+      @media @smallDesktop {
+         grid-template-areas: "left right" "lb rb" "btn btn";
+      }
+
+      .create-recipe-recipe-information {
+         flex: 1;
+         display: flex;
+         flex-direction: column;
+         gap: 1rem;
+      }
+
+      .recipe-ingredients {
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+         @media @smallDesktop {
+            flex-direction: row;
+         }
+         flex: 1;
+         gap: 3rem;
+      }
+   }
+
+   .create-recipe-btn-container {
+      .button {
+         margin-top: 0;
+      }
+   }
+
+   .input-box {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+   }
+}
+
+.create-recipe-ingredients {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+
+
+   .add-ingredient-btn {
+      display: flex;
+      align-items: center;
+      padding: .6rem 1.5rem;
+      gap: .6rem;
+      border: 1px solid @primaryColor;
+      border-radius: 8px;
+      transition: background-color 250ms ease-in;
+      font-weight: 500;
+
+      svg {
+         width: 24px;
+         height: 24px;
+         color: @primaryColor;
+      }
+
+      &:hover {
+         cursor: pointer;
+         background-color: @primaryColor;
+
+         svg {
+            color: @whiteColor;
+         }
+
+         color: @whiteColor;
+      }
+   }
+
+   .ingredient-list {
+      padding: 1rem 0;
+
+      .ingredient-item {
+         display: flex;
+         gap: 1rem;
+         font-size: 16px;
+         align-items: center;
+
+         img {
+            object-fit: cover;
+            object-position: center center;
+            border-radius: 8px;
+         }
+      }
+
+      button {
+         border-radius: 50%;
+         border: none;
+         aspect-ratio: 1;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         background-color: lighten(@grayColor, 15%);
+
+         svg {
+            width: 20px;
+            height: 20px;
+            stroke: @error;
+            stroke-width: 2px;
+         }
+
+         &:hover {
+            cursor: pointer;
+            background-color: @error;
+
+            svg {
+               stroke: @whiteColor;
+            }
+         }
+      }
+   }
+}
+
+.add-ingredient-dialog {
+   border: none;
+   border-radius: 8px;
+   box-shadow: 0 0 20px 12px rgba(0, 0, 0, 0.25);
+   padding: 2rem;
+   margin: auto auto;
+   opacity: 0;
+   display: block;
+   scale: 0;
+   transition: all 350ms;
+
+   &[open] {
+      opacity: 1;
+      scale: 1;
+   }
+
+   &::backdrop {
+      background-color: rgba(0, 0, 0, 0.15);
+   }
+
+   &:focus-visible {
+      outline: 2px solid @primaryColor;
+      outline-offset: 2px;
+      outline-style: dashed;
+   }
+
+   .add-ingredient-modal {
+      display: flex;
+      flex-direction: column;
+      gap: .8rem;
+      min-width: 480px;
+
+      .modal-btn-group {
+         display: flex;
+         justify-content: space-between;
+         margin-top: .3rem;
+
+         .button-cancel {
+            --outline-color: @error;
+            background-color: @error;
+            border: none;
+         }
+
+         .button-add {
+            --outline-color: @primaryColor;
+            border: none;
+         }
+
+         .button {
+            margin-top: 0;
+            transition: none;
+
+            &:focus-visible {
+               outline: 2px solid var(--outline-color);
+               outline-offset: 2px;
+               outline-style: dashed;
+            }
+         }
+      }
+   }
+}
+
+.create-recipe-instructions {
+   display: flex;
+   gap: .7rem;
+   flex-direction: column;
+   align-items: flex-start;
+   min-width: 300px;
+   width: 100%;
+   @media @smallDesktop {
+      width: 50%;
+   }
+
+   .input-box {
+      input {
+         width: 100%;
+      }
+   }
+
+   h4 {
+      font-size: 16px;
+      font-weight: 500;
+   }
+
+   .steps {
+      font-size: 16px;
+      display: flex;
+      flex-direction: column;
+      line-height: 1.6;
+      width: 100%;
+
+      .step {
+         display: grid;
+         grid-template-columns: 30px 1fr;
+         border-radius: 8px;
+
+         span {
+            color: @base200;
+         }
+
+         button {
+            margin-left: 1rem;
+         }
+         .step-content {
+            display: flex;
+            gap: 1rem;
+            min-width: 250px;
+            width: 100%;
+            justify-content: space-between;
+         }
+         .step-buttons {
+            visibility: hidden;
+         }
+
+         &:hover {
+            cursor: pointer;
+            background-color: rgba(@base200, 0.15);
+
+            .step-buttons {
+               visibility: visible;
+            }
+         }
+      }
+   }
+
+   .icon-button {
+      display: flex;
+      align-items: center;
+      border: 1px solid @primaryColor;
+      border-radius: 50%;
+      aspect-ratio: 1;
+      transition: background-color 250ms ease-in;
+      background-color: transparent;
+      padding: 2px;
+
+      svg {
+         width: 18px;
+         height: 18px;
+         color: @primaryColor;
+      }
+
+      &:hover {
+         cursor: pointer;
+         background-color: @primaryColor;
+
+         svg {
+            color: @whiteColor;
+         }
+
+         color: @whiteColor;
+      }
+
+      &:focus-visible {
+         outline: 2px solid @primaryColor;
+         outline-offset: 2px;
+         outline-style: dashed;
+      }
+   }
+
+   .delete-button {
+      border: 1px solid @error;
+      svg {
+         color: @error;
+      }
+      &:hover {
+         background-color: @error;
+      }
+   }
+
+   .add-step-form {
+      display: flex;
+      gap: .5rem;
+      align-items: baseline;
+      width: 100%;
+
+      input {
+         border: none;
+         border-bottom: 2px solid @primaryColor;
+         outline: none;
+         width: 100%;
+         font-size: 16px;
+         font-family: @baseFonFamily;
+         line-height: 1.6;
+
+         &.error {
+            border-color: @error;
+         }
+      }
+   }
+}
