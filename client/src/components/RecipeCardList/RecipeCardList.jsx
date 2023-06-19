@@ -1,11 +1,11 @@
-import recipes from '../../utils/data.json';
+import recipes from '../../utils/recipesData.json';
 import RecipeCard from '../RecipeCard/RecipeCard';
 import './recipeCardList.less';
 
 const RecipeCardList = () => {
    return (
       <div className='recipe-card-list'>
-         {recipes.results.map((recipe) => (
+         {recipes.map((recipe) => (
             <RecipeCard key={recipe.id} recipe={recipe} />
          ))}
       </div>
