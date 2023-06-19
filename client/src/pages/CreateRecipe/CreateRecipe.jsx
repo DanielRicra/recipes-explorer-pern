@@ -6,16 +6,28 @@ import RecipeForm from './components/RecipeForm';
 import { INITIAL_STATE, recipeFormReducer } from './recipeFormReducer';
 import './createRecipe.less';
 import { validateRecipe } from '../../utils/validations';
+import recipeService from '../../services/recipeService';
+import {
+   createRecipeReducer,
+   INITIAL_STATE as INITIAL_STATE_CREATE,
+} from './recipeReducer';
+import { actionTypes } from '../../utils/constants';
+import { ACTION_TYPES } from './recipeFormActionTypes';
+import { AxiosError } from 'axios';
 
 const CreateRecipe = () => {
    const [state, dispatch] = useReducer(recipeFormReducer, INITIAL_STATE);
    const [errors, setErrors] = useState({});
+   const [stateCreate, dispatchCreate] = useReducer(
+      createRecipeReducer,
+      INITIAL_STATE_CREATE
+   );
 
    const addError = ({ name, error }) => {
       setErrors((prev) => ({ ...prev, [name]: error }));
    };
 
-   const handleSubmit = (e) => {
+   const handleSubmit = async (e) => {
       e.preventDefault();
 
       const errors = validateRecipe(state);
@@ -25,7 +37,31 @@ const CreateRecipe = () => {
          return;
       }
 
-      //TODO: send a post request to the server
+      try {
+         dispatchCreate({ type: actionTypes.FETCH_START });
+         const recipeDTO = {
+            ...state,
+            analyzedInstructions: [state.instructions],
+         };
+         delete recipeDTO.instructions;
+
+         const data = await recipeService.createNewRecipe(recipeDTO);
+         dispatchCreate({ type: actionTypes.FETCH_SUCCESS, payload: data });
+         dispatch({ type: ACTION_TYPES.RESET_FORM });
+      } catch (error) {
+         if (error instanceof AxiosError) {
+            dispatchCreate({
+               type: actionTypes.FETCH_ERROR,
+               payload: error.response.data.error,
+            });
+            return;
+         }
+
+         dispatchCreate({
+            type: actionTypes.FETCH_ERROR,
+            payload: 'Something went wrong',
+         });
+      }
    };
 
    return (
@@ -73,8 +109,11 @@ const CreateRecipe = () => {
                </div>
 
                <button type='submit' className='button'>
-                  Create Recipe
+                  {stateCreate.loading ? 'Creating...' : 'Create Recipe'}
                </button>
+               {stateCreate.error && (
+                  <p className='error-message'>{stateCreate.error}</p>
+               )}
             </div>
          </form>
       </div>
