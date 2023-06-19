@@ -12,7 +12,6 @@ const defineIngredient = (sequelize, DataTypes) => {
       },
       consistency: {
          type: DataTypes.ENUM('solid', 'liquid', 'gas'),
-         allowNull: false,
       },
       name: {
          type: DataTypes.STRING,
