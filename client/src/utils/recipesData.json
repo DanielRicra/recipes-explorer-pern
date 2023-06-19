@@ -1,0 +1,2008 @@
+[
+   {
+      "diets": [
+         "gluten free",
+         "dairy free",
+         "lacto ovo vegetarian",
+         "vegan"
+      ],
+      "healthScore": 100,
+      "id": 782585,
+      "image": "https://spoonacular.com/recipeImages/782585-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 482.18,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 24.11
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Cannellini Bean and Asparagus Salad with Mushrooms"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free",
+         "lacto ovo vegetarian",
+         "vegan"
+      ],
+      "healthScore": 75,
+      "id": 716426,
+      "image": "https://spoonacular.com/recipeImages/716426-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 191.71,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 9.59
+         }
+      ],
+      "readyInMinutes": 30,
+      "title": "Cauliflower, Brown Rice, and Vegetable Fried Rice"
+   },
+   {
+      "diets": [
+         "lacto ovo vegetarian"
+      ],
+      "healthScore": 64,
+      "id": 715497,
+      "image": "https://spoonacular.com/recipeImages/715497-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 457.05,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 22.85
+         }
+      ],
+      "readyInMinutes": 5,
+      "title": "Berry Banana Breakfast Smoothie"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free"
+      ],
+      "healthScore": 100,
+      "id": 715415,
+      "image": "https://spoonacular.com/recipeImages/715415-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 477.24,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 23.86
+         }
+      ],
+      "readyInMinutes": 55,
+      "title": "Red Lentil Soup with Chicken and Turnips"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free",
+         "paleolithic",
+         "lacto ovo vegetarian",
+         "primal",
+         "vegan"
+      ],
+      "healthScore": 100,
+      "id": 716406,
+      "image": "https://spoonacular.com/recipeImages/716406-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 217.43,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 10.87
+         }
+      ],
+      "readyInMinutes": 20,
+      "title": "Asparagus and Pea Soup: Real Convenience Food"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free",
+         "paleolithic",
+         "lacto ovo vegetarian",
+         "primal",
+         "whole 30",
+         "vegan"
+      ],
+      "healthScore": 83,
+      "id": 644387,
+      "image": "https://spoonacular.com/recipeImages/644387-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 169.87,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 8.49
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Garlicky Kale"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free"
+      ],
+      "healthScore": 100,
+      "id": 715446,
+      "image": "https://spoonacular.com/recipeImages/715446-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 433.82,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 21.69
+         }
+      ],
+      "readyInMinutes": 490,
+      "title": "Slow Cooker Beef Stew"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free",
+         "lacto ovo vegetarian",
+         "vegan"
+      ],
+      "healthScore": 96,
+      "id": 782601,
+      "image": "https://spoonacular.com/recipeImages/782601-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 392.8,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 19.64
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Red Kidney Bean Jambalaya"
+   },
+   {
+      "diets": [
+         "gluten free"
+      ],
+      "healthScore": 85,
+      "id": 795751,
+      "image": "https://spoonacular.com/recipeImages/795751-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 526.09,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 26.3
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Chicken Fajita Stuffed Bell Pepper"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free",
+         "lacto ovo vegetarian",
+         "vegan"
+      ],
+      "healthScore": 100,
+      "id": 766453,
+      "image": "https://spoonacular.com/recipeImages/766453-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 778.28,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 38.91
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Hummus and Za'atar"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free",
+         "lacto ovo vegetarian",
+         "vegan"
+      ],
+      "healthScore": 60,
+      "id": 716627,
+      "image": "https://spoonacular.com/recipeImages/716627-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 445.69,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 22.28
+         }
+      ],
+      "readyInMinutes": 35,
+      "title": "Easy Homemade Rice and Beans"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free",
+         "lacto ovo vegetarian",
+         "vegan"
+      ],
+      "healthScore": 94,
+      "id": 664147,
+      "image": "https://spoonacular.com/recipeImages/664147-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 242.41,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 12.12
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Tuscan White Bean Soup with Olive Oil and Rosemary"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free",
+         "paleolithic",
+         "lacto ovo vegetarian",
+         "primal"
+      ],
+      "healthScore": 100,
+      "id": 640941,
+      "image": "https://spoonacular.com/recipeImages/640941-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 231.8,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 11.59
+         }
+      ],
+      "readyInMinutes": 30,
+      "title": "Crunchy Brussels Sprouts Side Dish"
+   },
+   {
+      "diets": [],
+      "healthScore": 39,
+      "id": 715495,
+      "image": "https://spoonacular.com/recipeImages/715495-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 220.59,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 11.03
+         }
+      ],
+      "readyInMinutes": 15,
+      "title": "Turkey Tomato Cheese Pizza"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free",
+         "lacto ovo vegetarian",
+         "vegan"
+      ],
+      "healthScore": 83,
+      "id": 794349,
+      "image": "https://spoonacular.com/recipeImages/794349-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 354.78,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 17.74
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Broccoli and Chickpea Rice Salad"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free",
+         "whole 30"
+      ],
+      "healthScore": 66,
+      "id": 716381,
+      "image": "https://spoonacular.com/recipeImages/716381-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 358.43,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 17.92
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Nigerian Snail Stew"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free"
+      ],
+      "healthScore": 100,
+      "id": 660306,
+      "image": "https://spoonacular.com/recipeImages/660306-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 586.78,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 29.34
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Slow Cooker: Pork and Garbanzo Beans"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free"
+      ],
+      "healthScore": 52,
+      "id": 756814,
+      "image": "https://spoonacular.com/recipeImages/756814-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 289.23,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 14.46
+         }
+      ],
+      "readyInMinutes": 10,
+      "title": "Powerhouse Almond Matcha Superfood Smoothie"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free",
+         "lacto ovo vegetarian",
+         "vegan"
+      ],
+      "healthScore": 74,
+      "id": 715769,
+      "image": "https://spoonacular.com/recipeImages/715769-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 625.07,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 31.25
+         }
+      ],
+      "readyInMinutes": 30,
+      "title": "Broccolini Quinoa Pilaf"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free",
+         "pescatarian"
+      ],
+      "healthScore": 100,
+      "id": 642129,
+      "image": "https://spoonacular.com/recipeImages/642129-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 161.61,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 8.08
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Easy To Make Spring Rolls"
+   },
+   {
+      "diets": [
+         "dairy free",
+         "lacto ovo vegetarian"
+      ],
+      "healthScore": 80,
+      "id": 642605,
+      "image": "https://spoonacular.com/recipeImages/642605-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 365.28,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 18.26
+         }
+      ],
+      "readyInMinutes": 75,
+      "title": "Farro With Mushrooms and Asparagus"
+   },
+   {
+      "diets": [
+         "gluten free"
+      ],
+      "healthScore": 100,
+      "id": 636589,
+      "image": "https://spoonacular.com/recipeImages/636589-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 464.73,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 23.24
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Butternut Squash Frittata"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free",
+         "lacto ovo vegetarian",
+         "vegan"
+      ],
+      "healthScore": 100,
+      "id": 646738,
+      "image": "https://spoonacular.com/recipeImages/646738-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 331.54,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 16.58
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Herbivoracious' White Bean and Kale Soup"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free",
+         "paleolithic",
+         "lacto ovo vegetarian",
+         "primal",
+         "vegan"
+      ],
+      "healthScore": 95,
+      "id": 715540,
+      "image": "https://spoonacular.com/recipeImages/715540-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 97.95,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 4.9
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Summer Berry Salad"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free",
+         "lacto ovo vegetarian",
+         "vegan"
+      ],
+      "healthScore": 100,
+      "id": 663559,
+      "image": "https://spoonacular.com/recipeImages/663559-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 340.11,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 17.01
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Tomato and lentil soup"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free",
+         "paleolithic",
+         "lacto ovo vegetarian",
+         "primal",
+         "vegan"
+      ],
+      "healthScore": 90,
+      "id": 662670,
+      "image": "https://spoonacular.com/recipeImages/662670-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 137.21,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 6.86
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Swiss Chard Wraps"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free",
+         "lacto ovo vegetarian",
+         "vegan"
+      ],
+      "healthScore": 71,
+      "id": 640062,
+      "image": "https://spoonacular.com/recipeImages/640062-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 237.36,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 11.87
+         }
+      ],
+      "readyInMinutes": 25,
+      "title": "Corn Avocado Salsa"
+   },
+   {
+      "diets": [
+         "gluten free"
+      ],
+      "healthScore": 38,
+      "id": 715421,
+      "image": "https://spoonacular.com/recipeImages/715421-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 594.1,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 29.7
+         }
+      ],
+      "readyInMinutes": 30,
+      "title": "Cheesy Chicken Enchilada Quinoa Casserole"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free",
+         "paleolithic",
+         "primal",
+         "pescatarian"
+      ],
+      "healthScore": 89,
+      "id": 648320,
+      "image": "https://spoonacular.com/recipeImages/648320-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 382.32,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 19.12
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Jade Buddha Salmon Tartare"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "lacto ovo vegetarian",
+         "primal",
+         "ketogenic"
+      ],
+      "healthScore": 49,
+      "id": 716432,
+      "image": "https://spoonacular.com/recipeImages/716432-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 655.5,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 32.77
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Finger Foods: Frittata Muffins"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free",
+         "lacto ovo vegetarian",
+         "vegan"
+      ],
+      "healthScore": 71,
+      "id": 798400,
+      "image": "https://spoonacular.com/recipeImages/798400-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 128.72,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 6.44
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Spicy Black-Eyed Pea Curry with Swiss Chard and Roasted Eggplant"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free",
+         "lacto ovo vegetarian",
+         "vegan"
+      ],
+      "healthScore": 60,
+      "id": 782600,
+      "image": "https://spoonacular.com/recipeImages/782600-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 309.29,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 15.46
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Quinoa Salad with Vegetables and Cashews"
+   },
+   {
+      "diets": [
+         "dairy free",
+         "lacto ovo vegetarian",
+         "vegan"
+      ],
+      "healthScore": 96,
+      "id": 652417,
+      "image": "https://spoonacular.com/recipeImages/652417-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 465.63,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 23.28
+         }
+      ],
+      "readyInMinutes": 30,
+      "title": "Moroccan chickpea and lentil stew"
+   },
+   {
+      "diets": [
+         "dairy free",
+         "lacto ovo vegetarian",
+         "vegan"
+      ],
+      "healthScore": 72,
+      "id": 639535,
+      "image": "https://spoonacular.com/recipeImages/639535-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 570.41,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 28.52
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Citrusy Pecan Garbanzo Couscous: A Salad For Cold Weather"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "pescatarian"
+      ],
+      "healthScore": 61,
+      "id": 729366,
+      "image": "https://spoonacular.com/recipeImages/729366-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 607.46,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 30.37
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Plantain Salad"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "lacto ovo vegetarian"
+      ],
+      "healthScore": 66,
+      "id": 661925,
+      "image": "https://spoonacular.com/recipeImages/661925-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 353.62,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 17.68
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Strawberry-Mango Quinoa Salad"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free",
+         "fodmap friendly",
+         "ketogenic"
+      ],
+      "healthScore": 78,
+      "id": 794538,
+      "image": "https://spoonacular.com/recipeImages/794538-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 484.91,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 24.25
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Almond Joy Protein Shake"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free",
+         "lacto ovo vegetarian",
+         "vegan"
+      ],
+      "healthScore": 100,
+      "id": 649931,
+      "image": "https://spoonacular.com/recipeImages/649931-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 319.61,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 15.98
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Lentil Salad With Vegetables"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free",
+         "whole 30"
+      ],
+      "healthScore": 89,
+      "id": 636787,
+      "image": "https://spoonacular.com/recipeImages/636787-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 492.94,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 24.65
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Caldo Verde - Portuguese Kale Soup"
+   },
+   {
+      "diets": [
+         "dairy free"
+      ],
+      "healthScore": 75,
+      "id": 641975,
+      "image": "https://spoonacular.com/recipeImages/641975-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 385.52,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 19.28
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Easy Ginger Beef Broccoli"
+   },
+   {
+      "diets": [
+         "dairy free",
+         "lacto ovo vegetarian",
+         "vegan"
+      ],
+      "healthScore": 56,
+      "id": 652423,
+      "image": "https://spoonacular.com/recipeImages/652423-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 483.46,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 24.17
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Moroccan Couscous and Chickpea Salad"
+   },
+   {
+      "diets": [
+         "dairy free"
+      ],
+      "healthScore": 65,
+      "id": 715447,
+      "image": "https://spoonacular.com/recipeImages/715447-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 565.84,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 28.29
+         }
+      ],
+      "readyInMinutes": 150,
+      "title": "Easy Vegetable Beef Soup"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free"
+      ],
+      "healthScore": 45,
+      "id": 716311,
+      "image": "https://spoonacular.com/recipeImages/716311-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 486.24,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 24.31
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Mango Fried Rice"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free",
+         "paleolithic",
+         "lacto ovo vegetarian",
+         "primal",
+         "whole 30",
+         "vegan"
+      ],
+      "healthScore": 34,
+      "id": 715543,
+      "image": "https://spoonacular.com/recipeImages/715543-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 170.13,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 8.51
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Homemade Guacamole"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "lacto ovo vegetarian"
+      ],
+      "healthScore": 78,
+      "id": 157344,
+      "image": "https://spoonacular.com/recipeImages/157344-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 719.45,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 35.97
+         }
+      ],
+      "readyInMinutes": 10,
+      "title": "Spicy Salad with Kidney Beans, Cheddar, and Nuts"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free",
+         "paleolithic",
+         "lacto ovo vegetarian",
+         "primal",
+         "whole 30",
+         "vegan"
+      ],
+      "healthScore": 70,
+      "id": 658509,
+      "image": "https://spoonacular.com/recipeImages/658509-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 58.24,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 2.91
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Roasted Broccoli with Lemon and Garlic"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free",
+         "lacto ovo vegetarian",
+         "vegan"
+      ],
+      "healthScore": 40,
+      "id": 716195,
+      "image": "https://spoonacular.com/recipeImages/716195-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 133.79,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 6.69
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Spicy Indian-Style Hummus"
+   },
+   {
+      "diets": [
+         "gluten free"
+      ],
+      "healthScore": 66,
+      "id": 716361,
+      "image": "https://spoonacular.com/recipeImages/716361-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 750.02,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 37.5
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Stir Fried Quinoa, Brown Rice and Chicken Breast"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "lacto ovo vegetarian",
+         "primal"
+      ],
+      "healthScore": 49,
+      "id": 765011,
+      "image": "https://spoonacular.com/recipeImages/765011-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 314.3,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 15.72
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Snap Pea and Green Bean Salad with Arugula Pesto"
+   },
+   {
+      "diets": [
+         "gluten free"
+      ],
+      "healthScore": 81,
+      "id": 660228,
+      "image": "https://spoonacular.com/recipeImages/660228-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 80.74,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 4.04
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Skinny Kale Basil Pesto"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "pescatarian"
+      ],
+      "healthScore": 42,
+      "id": 716408,
+      "image": "https://spoonacular.com/recipeImages/716408-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 343.4,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 17.17
+         }
+      ],
+      "readyInMinutes": 30,
+      "title": "Greek-Style Baked Fish: Fresh, Simple, and Delicious"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "primal"
+      ],
+      "healthScore": 79,
+      "id": 661340,
+      "image": "https://spoonacular.com/recipeImages/661340-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 321.81,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 16.09
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Spinach Salad with Strawberry Vinaigrette"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free",
+         "fodmap friendly"
+      ],
+      "healthScore": 100,
+      "id": 782622,
+      "image": "https://spoonacular.com/recipeImages/782622-312x231.png",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 419.86,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 20.99
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Chocolate Peanut Butter Cinnamon Smoothie"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free"
+      ],
+      "healthScore": 33,
+      "id": 715424,
+      "image": "https://spoonacular.com/recipeImages/715424-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 325.78,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 16.29
+         }
+      ],
+      "readyInMinutes": 130,
+      "title": "The Best Chili"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free",
+         "whole 30",
+         "pescatarian"
+      ],
+      "healthScore": 100,
+      "id": 659135,
+      "image": "https://spoonacular.com/recipeImages/659135-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 495.53,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 24.78
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Salmon with roasted vegetables"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free",
+         "whole 30"
+      ],
+      "healthScore": 83,
+      "id": 639851,
+      "image": "https://spoonacular.com/recipeImages/639851-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 733.32,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 36.67
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Cod with Tomato-Olive-Chorizo Sauce and Mashed Potatoes"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "lacto ovo vegetarian",
+         "primal"
+      ],
+      "healthScore": 100,
+      "id": 664547,
+      "image": "https://spoonacular.com/recipeImages/664547-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 209.88,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 10.49
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Vegetable Dip"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free",
+         "pescatarian"
+      ],
+      "healthScore": 82,
+      "id": 633921,
+      "image": "https://spoonacular.com/recipeImages/633921-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 301.22,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 15.06
+         }
+      ],
+      "readyInMinutes": 60,
+      "title": "Balsamic & Honey Glazed Salmon with Lemony Asparagus"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free",
+         "paleolithic",
+         "primal"
+      ],
+      "healthScore": 100,
+      "id": 658579,
+      "image": "https://spoonacular.com/recipeImages/658579-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 387.67,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 19.38
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Roasted Endive Salad With Prosciutto, Figs and Pistachios"
+   },
+   {
+      "diets": [],
+      "healthScore": 45,
+      "id": 715385,
+      "image": "https://spoonacular.com/recipeImages/715385-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 884.23,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 44.21
+         }
+      ],
+      "readyInMinutes": 540,
+      "title": "Slow Cooker Baked Potato Soup"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free",
+         "lacto ovo vegetarian",
+         "vegan"
+      ],
+      "healthScore": 81,
+      "id": 641057,
+      "image": "https://spoonacular.com/recipeImages/641057-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 134.47,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 6.72
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Curried Butternut Squash and Apple Soup"
+   },
+   {
+      "diets": [],
+      "healthScore": 100,
+      "id": 655575,
+      "image": "https://spoonacular.com/recipeImages/655575-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 269.04,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 13.45
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Penne Pasta with Broccoli and Cheese"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free",
+         "lacto ovo vegetarian",
+         "vegan"
+      ],
+      "healthScore": 100,
+      "id": 632269,
+      "image": "https://spoonacular.com/recipeImages/632269-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 360.99,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 18.05
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Amaranth and Roast Veggie Salad"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free",
+         "paleolithic",
+         "lacto ovo vegetarian",
+         "primal",
+         "fodmap friendly",
+         "whole 30",
+         "vegan"
+      ],
+      "healthScore": 100,
+      "id": 637162,
+      "image": "https://spoonacular.com/recipeImages/637162-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 222.26,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 11.11
+         }
+      ],
+      "readyInMinutes": 25,
+      "title": "Carrot and Cabbage Salad With Coriander+cumin Dry Rub"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free",
+         "lacto ovo vegetarian",
+         "vegan"
+      ],
+      "healthScore": 100,
+      "id": 982371,
+      "image": "https://spoonacular.com/recipeImages/982371-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 415.57,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 20.78
+         }
+      ],
+      "readyInMinutes": 13,
+      "title": "Instant Pot Quinoa Grain Bowl"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free",
+         "lacto ovo vegetarian",
+         "vegan"
+      ],
+      "healthScore": 100,
+      "id": 1095753,
+      "image": "https://spoonacular.com/recipeImages/1095753-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 548.62,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 27.43
+         }
+      ],
+      "readyInMinutes": 50,
+      "title": "Roasted Cauliflower Detox Bowl with Tahini Sauce"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free",
+         "lacto ovo vegetarian"
+      ],
+      "healthScore": 100,
+      "id": 660405,
+      "image": "https://spoonacular.com/recipeImages/660405-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 554.93,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 27.75
+         }
+      ],
+      "readyInMinutes": 630,
+      "title": "Smoky Black Bean Soup With Sweet Potato & Kale"
+   },
+   {
+      "diets": [
+         "gluten free"
+      ],
+      "healthScore": 34,
+      "id": 715523,
+      "image": "https://spoonacular.com/recipeImages/715523-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 685.04,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 34.25
+         }
+      ],
+      "readyInMinutes": 30,
+      "title": "Chorizo and Beef Quinoa Stuffed Pepper"
+   },
+   {
+      "diets": [
+         "dairy free",
+         "lacto ovo vegetarian",
+         "vegan"
+      ],
+      "healthScore": 52,
+      "id": 632252,
+      "image": "https://spoonacular.com/recipeImages/632252-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 30.37,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 1.52
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Alouette® Stuffed Mushroom Caps"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free"
+      ],
+      "healthScore": 100,
+      "id": 639891,
+      "image": "https://spoonacular.com/recipeImages/639891-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 877.28,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 43.86
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Coffee-braised Short Ribs"
+   },
+   {
+      "diets": [
+         "gluten free"
+      ],
+      "healthScore": 81,
+      "id": 646651,
+      "image": "https://spoonacular.com/recipeImages/646651-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 709.73,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 35.49
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Herb chicken with sweet potato mash and sautéed broccoli"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free",
+         "whole 30"
+      ],
+      "healthScore": 68,
+      "id": 716330,
+      "image": "https://spoonacular.com/recipeImages/716330-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 478.53,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 23.93
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Chicken and Mango Skewer"
+   },
+   {
+      "diets": [
+         "dairy free",
+         "pescatarian"
+      ],
+      "healthScore": 88,
+      "id": 640318,
+      "image": "https://spoonacular.com/recipeImages/640318-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 417.83,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 20.89
+         }
+      ],
+      "readyInMinutes": 25,
+      "title": "Crab Salad Stuffed Pita Pockets"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free",
+         "lacto ovo vegetarian",
+         "whole 30",
+         "vegan"
+      ],
+      "healthScore": 100,
+      "id": 642085,
+      "image": "https://spoonacular.com/recipeImages/642085-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 357.62,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 17.88
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Easy Roasted Vegetables"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "lacto ovo vegetarian",
+         "primal"
+      ],
+      "healthScore": 40,
+      "id": 716437,
+      "image": "https://spoonacular.com/recipeImages/716437-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 188.75,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 9.44
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Chilled Cucumber Avocado Soup with Yogurt and Kefir"
+   },
+   {
+      "diets": [
+         "gluten free"
+      ],
+      "healthScore": 82,
+      "id": 664090,
+      "image": "https://spoonacular.com/recipeImages/664090-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 642.89,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 32.14
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Turkish Chicken Salad with Home-made Cacik Yogurt Sauce"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free",
+         "lacto ovo vegetarian",
+         "vegan"
+      ],
+      "healthScore": 86,
+      "id": 636602,
+      "image": "https://spoonacular.com/recipeImages/636602-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 251.7,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 12.59
+         }
+      ],
+      "readyInMinutes": 30,
+      "title": "Butternut Squash Soup (In Half An Hour!)"
+   },
+   {
+      "diets": [
+         "lacto ovo vegetarian"
+      ],
+      "healthScore": 35,
+      "id": 716276,
+      "image": "https://spoonacular.com/recipeImages/716276-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 430.24,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 21.51
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Doughnuts"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free",
+         "lacto ovo vegetarian",
+         "vegan"
+      ],
+      "healthScore": 100,
+      "id": 649944,
+      "image": "https://spoonacular.com/recipeImages/649944-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 252.85,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 12.64
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Lentil Mango Salad"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free",
+         "lacto ovo vegetarian",
+         "vegan"
+      ],
+      "healthScore": 100,
+      "id": 646043,
+      "image": "https://spoonacular.com/recipeImages/646043-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 375.59,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 18.78
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Gujarati Dry Mung Bean Curry"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free",
+         "paleolithic",
+         "lacto ovo vegetarian",
+         "primal",
+         "whole 30",
+         "vegan"
+      ],
+      "healthScore": 100,
+      "id": 634437,
+      "image": "https://spoonacular.com/recipeImages/634437-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 200.26,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 10.01
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Basil Tagliatelle with Roasted Red Bell Pepper Salad"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free",
+         "fodmap friendly"
+      ],
+      "healthScore": 33,
+      "id": 655235,
+      "image": "https://spoonacular.com/recipeImages/655235-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 779.49,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 38.97
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Peanut Butter and Jelly Smoothie"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free",
+         "lacto ovo vegetarian",
+         "vegan"
+      ],
+      "healthScore": 100,
+      "id": 652393,
+      "image": "https://spoonacular.com/recipeImages/652393-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 396.33,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 19.82
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Moosewood Lentil Soup"
+   },
+   {
+      "diets": [
+         "dairy free",
+         "pescatarian"
+      ],
+      "healthScore": 100,
+      "id": 640828,
+      "image": "https://spoonacular.com/recipeImages/640828-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 390.3,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 19.52
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Crispy Panko and Herb Crusted Salmon"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free",
+         "paleolithic",
+         "primal",
+         "whole 30"
+      ],
+      "healthScore": 76,
+      "id": 769774,
+      "image": "https://spoonacular.com/recipeImages/769774-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 416.69,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 20.83
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Shredded Roast Beef Stuffed Sweet Potatoes (Whole 30 & PALEO)"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "pescatarian"
+      ],
+      "healthScore": 37,
+      "id": 715533,
+      "image": "https://spoonacular.com/recipeImages/715533-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 514.42,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 25.72
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Filet Mignon Soft Tacos"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free",
+         "paleolithic",
+         "primal",
+         "pescatarian"
+      ],
+      "healthScore": 68,
+      "id": 639411,
+      "image": "https://spoonacular.com/recipeImages/639411-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 422.05,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 21.1
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Cilantro Lime Halibut"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free",
+         "lacto ovo vegetarian",
+         "vegan"
+      ],
+      "healthScore": 89,
+      "id": 636228,
+      "image": "https://spoonacular.com/recipeImages/636228-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 139.54,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 6.98
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Broccoli Tartar"
+   },
+   {
+      "diets": [],
+      "healthScore": 79,
+      "id": 661259,
+      "image": "https://spoonacular.com/recipeImages/661259-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 523.46,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 26.17
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Spinach and Gorgonzola Stuffed Flank Steak"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free"
+      ],
+      "healthScore": 66,
+      "id": 664680,
+      "image": "https://spoonacular.com/recipeImages/664680-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 113.26,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 5.66
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Vegetarian Mushroom Shepherd's Pie"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free"
+      ],
+      "healthScore": 28,
+      "id": 715391,
+      "image": "https://spoonacular.com/recipeImages/715391-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 311.77,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 15.59
+         }
+      ],
+      "readyInMinutes": 485,
+      "title": "Slow Cooker Chicken Taco Soup"
+   },
+   {
+      "diets": [
+         "lacto ovo vegetarian"
+      ],
+      "healthScore": 54,
+      "id": 636230,
+      "image": "https://spoonacular.com/recipeImages/636230-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 120.38,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 6.02
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Broccoli with cheese soup"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free"
+      ],
+      "healthScore": 100,
+      "id": 632812,
+      "image": "https://spoonacular.com/recipeImages/632812-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 545.62,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 27.28
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Asian Chicken and Broccoli With Chili Garlic Sauce"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free",
+         "lacto ovo vegetarian",
+         "whole 30",
+         "vegan"
+      ],
+      "healthScore": 51,
+      "id": 633942,
+      "image": "https://spoonacular.com/recipeImages/633942-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 289.98,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 14.5
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Balsamic Roasted Vegetables"
+   },
+   {
+      "diets": [
+         "lacto ovo vegetarian"
+      ],
+      "healthScore": 74,
+      "id": 632347,
+      "image": "https://spoonacular.com/recipeImages/632347-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 286.89,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 14.34
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Ancient Grains Bread"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free"
+      ],
+      "healthScore": 83,
+      "id": 975070,
+      "image": "https://spoonacular.com/recipeImages/975070-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 345.99,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 17.3
+         }
+      ],
+      "readyInMinutes": 25,
+      "title": "Instant Pot Chicken Taco Soup"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free",
+         "lacto ovo vegetarian",
+         "vegan"
+      ],
+      "healthScore": 100,
+      "id": 649886,
+      "image": "https://spoonacular.com/recipeImages/649886-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 368.09,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 18.4
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Lemony Greek Lentil Soup"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free",
+         "pescatarian"
+      ],
+      "healthScore": 100,
+      "id": 659927,
+      "image": "https://spoonacular.com/recipeImages/659927-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 639.26,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 31.96
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Shrimp and Avocado Salad"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "dairy free",
+         "lacto ovo vegetarian"
+      ],
+      "healthScore": 35,
+      "id": 716217,
+      "image": "https://spoonacular.com/recipeImages/716217-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 389.64,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 19.48
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Vietnamese Pancakes with Vegetables, Herbs and a Fragrant Dipping Sauce (Bánh Xèo)"
+   },
+   {
+      "diets": [
+         "gluten free",
+         "lacto ovo vegetarian"
+      ],
+      "healthScore": 97,
+      "id": 636608,
+      "image": "https://spoonacular.com/recipeImages/636608-312x231.jpg",
+      "nutrients": [
+         {
+            "name": "Calories",
+            "amount": 492.21,
+            "unit": "kcal",
+            "percentOfDailyNeeds": 24.61
+         }
+      ],
+      "readyInMinutes": 45,
+      "title": "Butternut Squash, Arugula and Goat Cheese Quinoa"
+   }
+]
