@@ -48,16 +48,22 @@ const IngredientModalForm = ({ closeModal, addIngredient }) => {
       setIngredientData(initialIngredientData);
    };
 
+   const handleCancelButton = () => {
+      setErrors({});
+      setIngredientData(initialIngredientData);
+      closeModal();
+   };
+
    return (
       <div className='add-ingredient-modal'>
          <div className='input-box'>
             <TextField
-               errorMessage={errors?.name}
+               errorMessage={errors.name}
                name='name'
                value={ingredientData.name}
                autoFocus
                type='text'
-               error={!!errors?.name}
+               error={!!errors.name}
                handleChange={handleChange}
                placeholder='Ingredient name'
                label='Name'
@@ -66,11 +72,11 @@ const IngredientModalForm = ({ closeModal, addIngredient }) => {
 
          <div className='input-box'>
             <TextField
-               errorMessage={errors?.image}
+               errorMessage={errors.image}
                name='image'
                value={ingredientData.image}
                type='text'
-               error={!!errors?.image}
+               error={!!errors.image}
                handleChange={handleChange}
                placeholder='Image URL'
                label='Image'
@@ -79,11 +85,11 @@ const IngredientModalForm = ({ closeModal, addIngredient }) => {
 
          <div className='input-box'>
             <TextField
-               errorMessage={errors?.amount}
+               errorMessage={errors.amount}
                name='amount'
                value={ingredientData.recipe_ingredient.amount}
                type='number'
-               error={!!errors?.amount}
+               error={!!errors.amount}
                handleChange={handleChange}
                placeholder='Amount: 1, 2, 3, etc'
                label='Amount'
@@ -92,11 +98,11 @@ const IngredientModalForm = ({ closeModal, addIngredient }) => {
 
          <div className='input-box'>
             <TextField
-               errorMessage={errors?.unit}
+               errorMessage={errors.unit}
                name='unit'
                value={ingredientData.recipe_ingredient.unit}
                type='text'
-               error={!!errors?.unit}
+               error={!!errors.unit}
                handleChange={handleChange}
                placeholder='Unit: g, kg, ml, tablespoon, etc.'
                label='Unit'
@@ -107,7 +113,7 @@ const IngredientModalForm = ({ closeModal, addIngredient }) => {
             <button
                type='button'
                className='button button-cancel'
-               onClick={closeModal}
+               onClick={handleCancelButton}
             >
                Cancel
             </button>
