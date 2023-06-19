@@ -18,10 +18,11 @@ const MultiSelectAccordion = ({ addToSelectedFilters, title, options, styles }) 
             className='filter-accordion-content'
             style={{ '--height': options.length * 30 + 'px' }}
          >
-            {options.map((option, index) => (
+            {options.map((option) => (
                <CustomCheckBox
-                  key={`${option}-${index}`}
-                  labelText={option}
+                  key={`${option.id}}`}
+                  labelText={option.name}
+                  id={option.id}
                   onChange={addToSelectedFilters}
                />
             ))}
