@@ -15,13 +15,11 @@ const getAllRecipes = async (req, res, next) => {
       const results = data.results.map((recipe) => {
          return {
             diets: recipe.diets,
-            dishTypes: recipe?.dishTypes || [],
             healthScore: recipe.healthScore,
             id: recipe.id,
             image: recipe.image,
-            nutrients: recipe.nutrition.nutrients,
+            nutrients: [recipe.nutrition?.nutrients.at(0)],
             readyInMinutes: recipe.readyInMinutes,
-            summary: recipe.summary,
             title: recipe.title,
          };
       });
@@ -57,7 +55,7 @@ const createNewRecipe = async (req, res, next) => {
       image,
       summary,
       servings,
-      dietsId = ['omnivore'],
+      dietsId = [],
       extendedIngredients = [],
       analyzedInstructions = [],
    } = req.body;
