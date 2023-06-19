@@ -43,7 +43,7 @@ const IngredientList = ({ extendedIngredients, dispatch }) => {
                         <div className='ingredient-info'>
                            <p>{eIngredient.name}</p>
                            <p>
-                              {eIngredient.amount} {eIngredient.unit}
+                              {eIngredient.recipe_ingredient.amount} {eIngredient.recipe_ingredient.unit}
                            </p>
                         </div>
 
