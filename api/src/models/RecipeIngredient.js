@@ -6,7 +6,7 @@ const defineRecipeIngredient = (sequelize, DataTypes) => {
          autoIncrement: true,
       },
       amount: {
-         type: DataTypes.DECIMAL(4, 3),
+         type: DataTypes.DECIMAL(6, 3),
          allowNull: false,
       },
       unit: { 
