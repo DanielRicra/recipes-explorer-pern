@@ -7,7 +7,7 @@ export const INITIAL_STATE = {
    readyInMinutes: '',
    healthScore: '',
    servings: '',
-   diets: [],
+   dietsId: [],
    extendedIngredients: [],
    instructions: {
       name: '',
@@ -25,12 +25,12 @@ export const recipeFormReducer = (state, action) => {
       case ACTION_TYPES.SET_DIET:
          return {
             ...state,
-            diets: [...state.diets, action.payload],
+            dietsId: [...state.dietsId, action.payload],
          };
       case ACTION_TYPES.REMOVE_DIET:
          return {
             ...state,
-            diets: state.diets.filter((diet) => diet !== action.payload),
+            dietsId: state.dietsId.filter((diet) => diet !== action.payload),
          };
       case ACTION_TYPES.SET_EXTENDED_INGREDIENT:
          return {
@@ -73,6 +73,9 @@ export const recipeFormReducer = (state, action) => {
             },
          };
       }
+      case ACTION_TYPES.RESET_FORM: 
+         return INITIAL_STATE;
+      
       default:
          return state;
    }
