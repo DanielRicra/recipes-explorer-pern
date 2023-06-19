@@ -2,6 +2,7 @@ import { useState } from 'react';
 
 import { validateIngredient } from '../../../utils/validations';
 import TextField from '../../../components/CustomInputs/TextField';
+import { convertNumeric } from '../../../utils/helpers';
 
 const initialIngredientData = {
    name: '',
@@ -24,7 +25,7 @@ const IngredientModalForm = ({ closeModal, addIngredient }) => {
             ...prev,
             recipe_ingredient: {
                ...prev.recipe_ingredient,
-               [name]: value,
+               [name]: name === 'amount' ? convertNumeric(value) : value,
             },
          }));
       } else {
