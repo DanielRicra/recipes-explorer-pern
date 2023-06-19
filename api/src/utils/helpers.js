@@ -10,10 +10,13 @@ export function createDiets(Diet) {
       { name: 'paleo' },
       { name: 'ketogenic' },
       { name: 'vegetarian' },
-      { name: 'omnivore' },
       { name: 'whole 30' },
       { name: 'vegan' },
       { name: 'primal' },
+      { name: 'fodmap friendly' },
+      { name: 'dairy free' },
+      { name: 'paleolithic' },
+      { name: 'lacto ovo vegetarian' },
    ])
       .then(() => {
          console.log('Created diets. OK');
@@ -49,8 +52,8 @@ export const validateExtendedIngredients = (extendedIngredients) => {
       throw new BadRequestError('No ingredients provided');
    }
 
-   extendedIngredients.forEach(({ name, image, consistency, recipe_ingredient }) => {
-      if (!name || !image || !consistency || !recipe_ingredient) {
+   extendedIngredients.forEach(({ name, image, recipe_ingredient }) => {
+      if (!name || !image || !recipe_ingredient) {
          throw new BadRequestError('Ingredients have missing fields');
       }
 
@@ -69,8 +72,8 @@ export const validateAnalyzedInstructions = (analyzedInstructions) => {
       throw new BadRequestError('No instructions  provided');
    }
 
-   analyzedInstructions.forEach(({ name, steps }) => {
-      if (!name || !steps) {
+   analyzedInstructions.forEach(({ steps }) => {
+      if (!steps) {
          throw new BadRequestError('Some Instruction has missing fields');
       }
 
