@@ -3,16 +3,19 @@ import {
    TextField,
    TextareaField,
 } from '../../../components';
+import { useDiets } from '../../../hooks/useDiets';
 import { validateRecipe } from '../../../utils/validations';
 import { ACTION_TYPES } from '../recipeFormActionTypes';
 
 const RecipeForm = ({ recipe, dispatch, errors, addError }) => {
+   const { diets } = useDiets();
+
    const addToSelectedDiets = (e) => {
-      const diet = e.target.name;
-      if (recipe.diets.includes(diet)) {
-         dispatch({ type: ACTION_TYPES.REMOVE_DIET, payload: diet });
+      const dietId = +e.target.dataset.id;
+      if (recipe.dietsId.includes(dietId)) {
+         dispatch({ type: ACTION_TYPES.REMOVE_DIET, payload: dietId });
       } else {
-         dispatch({ type: ACTION_TYPES.SET_DIET, payload: diet });
+         dispatch({ type: ACTION_TYPES.SET_DIET, payload: dietId });
       }
    };
 
@@ -110,7 +113,7 @@ const RecipeForm = ({ recipe, dispatch, errors, addError }) => {
          </div>
 
          <MultiSelectAccordion
-            options={['omnivore', 'vegetarian', 'vegan']}
+            options={diets}
             addToSelectedFilters={addToSelectedDiets}
             title='Diets'
             styles={{
