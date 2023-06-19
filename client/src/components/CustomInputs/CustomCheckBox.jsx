@@ -1,12 +1,13 @@
 import './customCheckBox.less';
 
-const CustomCheckBox = ({ labelText, onChange }) => {
+const CustomCheckBox = ({ labelText, onChange, id }) => {
    return (
       <div className='checkbox-wrapper'>
          <input
             id={labelText}
             type='checkbox'
             name={labelText}
+            data-id={id}
             className='input-checkbox'
             onChange={onChange}
          />
