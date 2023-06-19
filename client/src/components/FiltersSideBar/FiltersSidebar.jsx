@@ -2,9 +2,11 @@ import { useState } from 'react';
 
 import MultiSelectAccordion from '../Accordions/MultiSelectAccordion';
 import './filtersSidebar.less';
+import { useDiets } from '../../hooks/useDiets';
 
 const FiltersSidebar = () => {
    const [selectedFilters, setSelectedFilters] = useState([]);
+   const { diets } = useDiets();
 
    const addToSelectedFilters = (e) => {
       const { checked, name } = e.target;
@@ -19,14 +21,7 @@ const FiltersSidebar = () => {
       <div className='filters-sidebar'>
          <MultiSelectAccordion
             title='Type of Diet'
-            options={[
-               'vegan',
-               'vegetarian',
-               'pescetarian',
-               'paleo',
-               'ketogenic',
-               'gluten free',
-            ]}
+            options={diets.map((diet) => diet.name)}
             addToSelectedFilters={addToSelectedFilters}
          />
 
