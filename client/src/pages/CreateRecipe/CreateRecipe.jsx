@@ -1,4 +1,7 @@
 import { useReducer, useState } from 'react';
+import { AxiosError } from 'axios';
+import { useDispatch } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 
 import IngredientList from './components/IngredientList';
 import Instructions from './components/Instructions';
@@ -13,15 +16,16 @@ import {
 } from './recipeReducer';
 import { actionTypes } from '../../utils/constants';
 import { ACTION_TYPES } from './recipeFormActionTypes';
-import { AxiosError } from 'axios';
 
 const CreateRecipe = () => {
-   const [state, dispatch] = useReducer(recipeFormReducer, INITIAL_STATE);
+   const [state, dispatchRecipe] = useReducer(recipeFormReducer, INITIAL_STATE);
    const [errors, setErrors] = useState({});
    const [stateCreate, dispatchCreate] = useReducer(
       createRecipeReducer,
       INITIAL_STATE_CREATE
    );
+   const dispatch = useDispatch();
+   const navigate = useNavigate();
 
    const addError = ({ name, error }) => {
       setErrors((prev) => ({ ...prev, [name]: error }));
@@ -46,13 +50,16 @@ const CreateRecipe = () => {
          delete recipeDTO.instructions;
 
          const data = await recipeService.createNewRecipe(recipeDTO);
-         dispatchCreate({ type: actionTypes.FETCH_SUCCESS, payload: data });
-         dispatch({ type: ACTION_TYPES.RESET_FORM });
+
+         dispatch({ type: actionTypes.ADD_RECIPE, payload: data });
+         dispatchCreate({ type: actionTypes.FETCH_SUCCESS, payload: data});
+         dispatchRecipe({ type: ACTION_TYPES.RESET_FORM });
+         navigate('/home');
       } catch (error) {
          if (error instanceof AxiosError) {
             dispatchCreate({
                type: actionTypes.FETCH_ERROR,
-               payload: error.response.data.error,
+               payload: error.response?.data.error,
             });
             return;
          }
@@ -72,7 +79,7 @@ const CreateRecipe = () => {
             <div className='recipe-ingredients'>
                <RecipeForm
                   recipe={state}
-                  dispatch={dispatch}
+                  dispatch={dispatchRecipe}
                   errors={errors}
                   addError={addError}
                />
@@ -80,7 +87,7 @@ const CreateRecipe = () => {
                <div className='flex-column'>
                   <IngredientList
                      extendedIngredients={state.extendedIngredients}
-                     dispatch={dispatch}
+                     dispatch={dispatchRecipe}
                   />
                   <p className='error-message'>
                      {errors.extendedIngredients ?? ''}
@@ -91,7 +98,7 @@ const CreateRecipe = () => {
             <div className='flex-column'>
                <Instructions
                   instructions={state.instructions}
-                  dispatch={dispatch}
+                  dispatch={dispatchRecipe}
                />
                <p className='error-message'>{errors.instructions ?? ''}</p>
             </div>
