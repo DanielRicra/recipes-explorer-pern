@@ -21,19 +21,32 @@ const RecipeCard = ({ recipe }) => {
             <h2 className='recipe-card-title'>{recipe.title}</h2>
 
             <div className='recipe-card-info'>
-               <p><Chronometer />  {recipe.readyInMinutes}min</p>
                <p>
+                  <Chronometer /> {recipe.readyInMinutes}min
+               </p>
+               <p title='Calories'>
                   <Flame />
-                  {Math.round(recipe.nutrients[0].amount)} Calories
+                  {Math.round(recipe.nutrients[0].amount)} cal
+               </p>
+               <p
+                  title='Health Score'
+                  style={{
+                     color: recipe.healthScore > 50 ? '#32a932' : '#FF0000',
+                     fontWeight: '500',
+                  }}
+               >
+                  {recipe.healthScore}%
                </p>
             </div>
 
             <div className='recipe-card-diets'>
                {recipe.diets?.length === 0 ? (
                   <span>omnivore</span>
-               ) : recipe.diets?.map((diet, index) => (
-                  <span key={index}>{diet}</span>
-               ))}
+               ) : (
+                  recipe.diets?.map((diet, index) => (
+                     <span key={index}>{diet}</span>
+                  ))
+               )}
             </div>
          </div>
       </div>
