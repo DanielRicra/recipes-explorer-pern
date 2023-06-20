@@ -28,7 +28,11 @@ const recipes = (state = initialState, action) => {
             status: 'rejected',
             error: payload,
          };
-
+      case actionTypes.ADD_RECIPE:
+         return {
+            ...state,
+            values: [...state.values, payload],
+         };
       default:
          return state;
    }
