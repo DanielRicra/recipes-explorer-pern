@@ -27,7 +27,10 @@ const FiltersSidebar = () => {
 
          <MultiSelectAccordion
             title='Data Source From'
-            options={['Spoonacular API', 'Recipe Explorer API']}
+            options={[
+               { id: 1, name: 'Spoonacular API' },
+               { id: 2, name: 'Recipe Explorer API' },
+            ]}
             addToSelectedFilters={addToSelectedFilters}
          />
       </div>
