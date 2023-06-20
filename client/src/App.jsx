@@ -6,14 +6,14 @@ import { useEffect } from 'react';
 import { Landing, Home, RecipeDetail, CreateRecipe, NotFound } from './pages';
 import { NavBar } from './components';
 import recipesData from './utils/recipesData.json';
-import { actionTypes } from './utils/constants';
+import { setRecipes } from './redux/actions';
 import './App.less';
 
 function App() {
    const dispatch = useDispatch();
 
    useEffect(() => {
-      dispatch({ type: actionTypes.FETCH_SUCCESS, payload: recipesData });
+      dispatch(setRecipes(recipesData));
    }, []);
 
    return (
