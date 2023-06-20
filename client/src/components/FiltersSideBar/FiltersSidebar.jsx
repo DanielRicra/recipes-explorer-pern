@@ -7,23 +7,38 @@ import { useDiets } from '../../hooks/useDiets';
 import './filtersSidebar.less';
 import { actionTypes } from '../../utils/constants';
 
-const FiltersSidebar = () => {
+const FiltersSidebar = ({ paginate }) => {
    const [selectedFilters, setSelectedFilters] = useState([]);
+   const [sourceFilters, setSourceFilters] = useState([]);
    const { diets, loading, error } = useDiets();
    const dispatch = useDispatch();
 
    const addToSelectedFilters = (e) => {
       const { checked, name } = e.target;
       if (checked) {
-         setSelectedFilters([...selectedFilters, name]);
+         setSelectedFilters((prev) => [...prev, name]);
       } else {
          setSelectedFilters(selectedFilters.filter((item) => item !== name));
       }
    };
 
+   const addToSourceFilters = (e) => {
+      const { checked, name } = e.target;
+      if (checked) {
+         setSourceFilters((prev) => [...prev, name]);
+      } else {
+         setSourceFilters(sourceFilters.filter((item) => item !== name));
+      }
+   };
+   
    useEffect(() => {
-      dispatch({ type: actionTypes.SET_VISIBILITY_FILTER, payload: selectedFilters });
+      dispatch({ type: actionTypes.SET_DIET_FILTER, payload: selectedFilters });
+      paginate(1);
    }, [selectedFilters]);
+
+   useEffect(() => {
+      dispatch({ type: actionTypes.SET_SOURCE_FILTER, payload: sourceFilters });
+   }, [sourceFilters]);
 
    return (
       <div className='filters-sidebar'>
@@ -41,7 +56,7 @@ const FiltersSidebar = () => {
                { id: 1, name: 'Spoonacular API' },
                { id: 2, name: 'Recipe Explorer API' },
             ]}
-            addToSelectedFilters={addToSelectedFilters}
+            addToSelectedFilters={addToSourceFilters}
          />
       </div>
    );
