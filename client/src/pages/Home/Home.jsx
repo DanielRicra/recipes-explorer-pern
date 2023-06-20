@@ -7,8 +7,9 @@ import {
    RecipeCardList,
    SearchBar,
 } from '../../components';
-import { actionTypes, orderTypes } from '../../utils/constants';
+import { orderTypes } from '../../utils/constants';
 import { compareWords } from '../../utils/helpers';
+import { setVisibilityOrder } from '../../redux/actions';
 import './home.less';
 
 const Home = () => {
@@ -64,6 +65,8 @@ const Home = () => {
       });
    });
 
+   const { status, error } = useSelector((state) => state.recipes);
+
    const currentRecipes = filteredRecipes.slice(
       (currentPage - 1) * 9,
       currentPage * 9
@@ -74,10 +77,7 @@ const Home = () => {
    };
 
    const handleOrder = (e) => {
-      dispatch({
-         type: actionTypes.SET_VISIBILITY_ORDER,
-         payload: e.target.value,
-      });
+      dispatch(setVisibilityOrder(e.target.value));
    };
 
    return (
@@ -122,7 +122,14 @@ const Home = () => {
                <p>
                   {`Showing ${currentRecipes.length} of ${filteredRecipes.length} recipes`}
                </p>
-               <RecipeCardList recipes={currentRecipes} />
+
+               {status === 'loading' && (
+                  <p className='animation-pulse' style={{ fontSize: '24px' }}>Loading...</p>
+               )}
+               {status === 'rejected' && <p>{error}</p>}
+               {status === 'fulfilled' && (
+                  <RecipeCardList recipes={currentRecipes} />
+               )}
 
                <div className='home-recipe-results-pagination'>
                   <Pagination
