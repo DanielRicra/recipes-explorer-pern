@@ -1,12 +1,12 @@
 import { useParams } from 'react-router-dom';
 import { useEffect, useReducer } from 'react';
+import { AxiosError } from 'axios';
 
 import { ReactComponent as IconTimer } from '../../assets/chronometer.svg';
 import recipeService from '../../services/recipeService';
-import './recipeDetail.less';
 import { INITIAL_STATE, recipeReducer } from './recipeReducer';
 import { actionTypes } from '../../utils/constants';
-import { AxiosError } from 'axios';
+import './recipeDetail.less';
 
 const TimeCard = ({ title, time, timeUnit }) => {
    return (
