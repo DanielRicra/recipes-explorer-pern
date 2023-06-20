@@ -94,6 +94,7 @@ const RecipeDetail = () => {
                <p className='recipe-detail-summary'>
                   {state.recipe.summary?.replace(/<[^>]+>/g, '')}
                </p>
+               <p>Health Score: {state.recipe.healthScore}%</p>
                <div className='recipe-detail-diets'>
                   {state.recipe.diets?.map((diet, index) => (
                      <span key={index}>{diet}</span>
