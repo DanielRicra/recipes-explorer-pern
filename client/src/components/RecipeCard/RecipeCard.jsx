@@ -14,11 +14,11 @@ const RecipeCard = ({ recipe }) => {
    return (
       <div className='recipe-card' onClick={handleCardClick}>
          <figure>
-            <img src={recipe.image} alt={recipe.title} loading='lazy' />
+            <img src={recipe.image} alt={recipe.title ?? recipe.name} loading='lazy' />
          </figure>
 
          <div className='recipe-card-content'>
-            <h2 className='recipe-card-title'>{recipe.title}</h2>
+            <h2 className='recipe-card-title'>{recipe.title ?? recipe.name}</h2>
 
             <div className='recipe-card-info'>
                <p>
@@ -26,7 +26,7 @@ const RecipeCard = ({ recipe }) => {
                </p>
                <p title='Calories'>
                   <Flame />
-                  {Math.round(recipe.nutrients[0].amount)} cal
+                  {recipe.nutrients?.at(0).amount ?? '--'} cal
                </p>
                <p
                   title='Health Score'
