@@ -40,7 +40,7 @@ const Pagination = ({ currentPage, totalPages, paginate }) => {
          <li className='page-item'>
             <span
                onClick={next}
-               className={currentPage === totalPages ? 'disabled' : ''}
+               className={currentPage >= totalPages ? 'disabled' : ''}
             >
                <ChevronRight />
             </span>
