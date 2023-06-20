@@ -5,7 +5,7 @@ const router = Router();
 
 router.get('/', recipeController.getAllRecipes);
 
-router.get('/search', recipeController.getAllRecipes);
+router.get('/name', recipeController.getAllRecipes);
 
 router.get('/:recipeId', recipeController.getRecipeById);
 
