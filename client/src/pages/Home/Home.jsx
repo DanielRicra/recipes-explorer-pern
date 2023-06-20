@@ -1,6 +1,5 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 import { useDispatch, useSelector } from 'react-redux';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 import {
    FiltersSideBar,
@@ -9,9 +8,8 @@ import {
    SearchBar,
 } from '../../components';
 import { actionTypes, orderTypes } from '../../utils/constants';
-import recipesData from '../../utils/recipesData.json';
-import './home.less';
 import { compareWords } from '../../utils/helpers';
+import './home.less';
 
 const Home = () => {
    const [currentPage, setCurrentPage] = useState(1);
@@ -26,12 +24,12 @@ const Home = () => {
       switch (orderType) {
          case orderTypes.TITLE_ASC:
             recipes = recipes.toSorted((a, b) =>
-               compareWords(a.title, b.title)
+               compareWords(a.title ?? a.name, b.title ?? b.name)
             );
             break;
          case orderTypes.TITLE_DESC:
             recipes = recipes.toSorted((a, b) =>
-               compareWords(b.title, a.title)
+               compareWords(b.title ?? b.name, a.title ?? a.name)
             );
             break;
          case orderTypes.HEALTH_SCORE_ASC:
@@ -81,10 +79,6 @@ const Home = () => {
          payload: e.target.value,
       });
    };
-
-   useEffect(() => {
-      dispatch({ type: actionTypes.FETCH_SUCCESS, payload: recipesData });
-   }, []);
 
    return (
       <div className='home'>
