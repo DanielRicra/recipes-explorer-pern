@@ -4,15 +4,17 @@ import dietService from '../services/dietService';
 export const useDiets = () => {
    const [diets, setDiets] = useState([]);
    const [loading, setLoading] = useState(false);
+   const [error, setError] = useState(null);
 
    useEffect(() => {
       const getAllDiets = async () => {
          setLoading(true);
+         setError(null);
          try {
             const data = await dietService.getAllDiets();
             setDiets(data);
          } catch (error) {
-            console.log(error);
+            setError(error.message);
          } finally {
             setLoading(false);
          }
@@ -21,5 +23,5 @@ export const useDiets = () => {
       getAllDiets();
    }, []);
 
-   return { diets, loading };
+   return { diets, loading, error };
 };
