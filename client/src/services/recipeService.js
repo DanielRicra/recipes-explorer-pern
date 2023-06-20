@@ -9,7 +9,7 @@ const getAllRecipes = async ({ offset = 0, limit = 10 }) => {
    return response.data;
 };
 
-const getRecipeByName = async ({ name, offset, limit }) => {
+const getRecipeByName = async ({ name, offset = 0, limit }) => {
    const response = await axios.get(
       `${BASE_URL}/search?name=${name}&offset=${offset}&limit=${limit}`
    );
