@@ -20,7 +20,7 @@ const MultiSelectAccordion = ({ addToSelectedFilters, title, options, styles }) 
          >
             {options.map((option) => (
                <CustomCheckBox
-                  key={`${option.id}}`}
+                  key={`${option.id}`}
                   labelText={option.name}
                   id={option.id}
                   onChange={addToSelectedFilters}
