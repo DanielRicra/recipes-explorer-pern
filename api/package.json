@@ -6,7 +6,9 @@
   "type": "module",
   "scripts": {
     "test": "set NODE_OPTIONS=--experimental-vm-modules && jest",
-    "test:diet": "set NODE_OPTIONS=--experimental-vm-modules && jest ./tests/dietController.test.js",
+    "test:diet": "set NODE_OPTIONS=--experimental-vm-modules && jest ./tests/dietRoutes.test.js",
+    "test:recipe": "set NODE_OPTIONS=--experimental-vm-modules && jest ./tests/recipeRoutes.test.js",
+    "test:models": "set NODE_OPTIONS=--experimental-vm-modules && jest ./tests/models.test.js",
     "start": "node src/index.js",
     "dev": "nodemon src/index.js"
   },
