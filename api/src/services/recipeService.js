@@ -1,6 +1,7 @@
 import { NotFoundError } from '../errors/customErrors.js';
 import db from '../db.js';
 import { formattedRecipeData, isValidUUIDV4 } from '../utils/helpers.js';
+import { QueryTypes } from 'sequelize';
 
 const API_KEY = process.env.API_KEY;
 const BASE_URL = 'https://api.spoonacular.com/recipes';
@@ -16,7 +17,27 @@ const getAllRecipes = async (name = '', offset = 0, limit = 10) => {
       const data = await response.json();
       return data;
    } catch (error) {
-      throw new Error(error.message);
+      throw error;
+   }
+};
+
+const getAllRecipesFromDB = async (name = '', offset = 0, limit = 10) => {
+   try {
+      const dataFromDb = await db.sequelize.query(
+         `SELECT r.*, ARRAY_AGG(d.name) AS diets
+            FROM recipes r
+            INNER JOIN recipe_diet rd ON rd."recipeId" = r.id
+            INNER JOIN diets d ON rd."dietId" = d.id
+            WHERE r.name ILIKE '%${name}%'
+            GROUP BY r.id LIMIT ${limit} OFFSET ${offset}`,
+         {
+            type: QueryTypes.SELECT,
+         }
+      );
+
+      return dataFromDb;
+   } catch (error) {
+      throw error;
    }
 };
 
@@ -123,4 +144,5 @@ export default {
    getRecipeById,
    getAllRecipes,
    createNewRecipe,
+   getAllRecipesFromDB,
 };
