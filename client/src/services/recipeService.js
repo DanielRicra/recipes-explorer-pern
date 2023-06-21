@@ -11,7 +11,7 @@ const getAllRecipes = async ({ offset = 0, limit = 10 }) => {
 
 const getRecipeByName = async ({ name, offset = 0, limit }) => {
    const response = await axios.get(
-      `${BASE_URL}/search?name=${name}&offset=${offset}&limit=${limit}`
+      `${BASE_URL}/name?name=${name}&offset=${offset}&limit=${limit}`
    );
    return response.data;
 };
