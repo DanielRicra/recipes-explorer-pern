@@ -58,7 +58,9 @@ export const validateExtendedIngredients = (extendedIngredients) => {
       }
 
       if (!recipe_ingredient.amount || !recipe_ingredient.unit) {
-         throw new BadRequestError('Some recipe_ingredients have missing fields');
+         throw new BadRequestError(
+            'Some recipe_ingredients have missing fields'
+         );
       }
    });
 };
@@ -83,4 +85,53 @@ export const validateAnalyzedInstructions = (analyzedInstructions) => {
          }
       });
    });
+};
+
+export const isValidUUIDV4 = (uuid) => {
+   return /^[0-9a-fA-F]{8}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{12}$/gi.test(
+      uuid
+   );
+};
+
+export const formattedRecipeData = (recipe) => {
+   const extendedIngredients = recipe.ingredients.map((ingredient) => {
+      return {
+         id: ingredient.id,
+         image: ingredient.image,
+         name: ingredient.name,
+         amount: ingredient.recipe_ingredient.amount,
+         unit: ingredient.recipe_ingredient.unit,
+      };
+   });
+
+   const analyzedInstructions = recipe.analyzed_instructions.map(
+      (instruction) => {
+         return {
+            id: instruction.id,
+            name: instruction.name,
+            steps: instruction.steps.map((step) => {
+               return {
+                  id: step.id,
+                  number: step.number,
+                  step: step.step,
+               };
+            }),
+         };
+      }
+   );
+
+   return {
+      preparationMinutes: recipe.preparationMinutes ?? -1,
+      cookingMinutes: recipe.cookingMinutes ?? -1,
+      healthScore: recipe.healthScore,
+      extendedIngredients,
+      id: recipe.id,
+      name: recipe.name,
+      readyInMinutes: recipe.readyInMinutes,
+      servings: recipe.servings,
+      image: recipe.image,
+      summary: recipe.summary,
+      diets: recipe.diets.map((diet) => diet.name),
+      analyzedInstructions,
+   };
 };
