@@ -1,5 +1,6 @@
 import { NotFoundError } from '../errors/customErrors.js';
 import db from '../db.js';
+import { formattedRecipeData, isValidUUIDV4 } from '../utils/helpers.js';
 
 const API_KEY = process.env.API_KEY;
 const BASE_URL = 'https://api.spoonacular.com/recipes';
@@ -21,6 +22,29 @@ const getAllRecipes = async (name = '', offset = 0, limit = 10) => {
 
 const getRecipeById = async (recipeId) => {
    try {
+      if (isValidUUIDV4(recipeId)) {
+         const recipeDB = await db.Recipe.findOne({
+            where: {
+               id: recipeId,
+            },
+            include: [
+               db.Ingredient,
+               { model: db.AnalyzedInstruction, include: [db.Step] },
+               {
+                  model: db.Diet,
+                  attributes: ['name'],
+                  through: { attributes: [] },
+               },
+            ],
+         });
+
+         if (!recipeDB) {
+            throw new NotFoundError('Recipe not found');
+         }
+
+         return formattedRecipeData(recipeDB);
+      }
+
       const response = await fetch(
          `${BASE_URL}/${recipeId}/information?apiKey=${API_KEY}`,
          { method: 'GET' }
