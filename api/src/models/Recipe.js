@@ -8,6 +8,11 @@ const defineRecipe = (sequelize, DataTypes) => {
       name: {
          type: DataTypes.STRING,
          allowNull: false,
+         validate: {
+            notNull: {
+               msg: 'Please enter your name',
+            },
+         },
       },
       image: {
          type: DataTypes.STRING,
@@ -20,6 +25,16 @@ const defineRecipe = (sequelize, DataTypes) => {
       healthScore: {
          type: DataTypes.INTEGER,
          allowNull: false,
+         validate: {
+            min: {
+               args: [0],
+               msg: 'Health score must be between 0 and 100',
+            },
+            max: {
+               args: [100],
+               msg: 'Health score must be between 0 and 100',
+            },
+         },
       },
       readyInMinutes: {
          type: DataTypes.INTEGER,
@@ -28,7 +43,7 @@ const defineRecipe = (sequelize, DataTypes) => {
       servings: {
          type: DataTypes.INTEGER,
          allowNull: false,
-      }
+      },
    });
 };
 
