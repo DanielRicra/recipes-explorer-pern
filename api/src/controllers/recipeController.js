@@ -8,11 +8,13 @@ import {
 
 const getAllRecipes = async (req, res, next) => {
    const { name, offset = 0, limit = 10 } = req.query;
-   try {
-      const data = await recipeService.getAllRecipes(name, offset, limit);
-      const pages = Math.ceil(data.totalResults / limit);
 
-      const results = data.results.map((recipe) => {
+   try {
+      const results = [];
+      const apiData = await recipeService.getAllRecipes(name, offset, limit);
+      const dbData = await recipeService.getAllRecipesFromDB(name, offset, limit);
+
+      results.push(...apiData.results.map((recipe) => {
          return {
             diets: recipe.diets,
             healthScore: recipe.healthScore,
@@ -22,14 +24,12 @@ const getAllRecipes = async (req, res, next) => {
             readyInMinutes: recipe.readyInMinutes,
             title: recipe.title,
          };
-      });
+      }));
+
+      results.push(...dbData);
 
       res.status(HTTP_STATUS.OK).json({
          results,
-         previous: offset > 0 ? offset - 1 : null,
-         next: pages > +offset ? parseInt(offset) + 1 : null,
-         pages: pages,
-         totalResults: data.totalResults,
       });
    } catch (error) {
       next(error);
