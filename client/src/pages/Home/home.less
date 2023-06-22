@@ -25,18 +25,40 @@
       flex-direction: column;
       gap: 2rem;
 
-      .home-recipe-results-header {
-         background-color: @whiteColor;
-         padding: 1rem;
-         border-radius: 8px;
-         display: flex;
-         justify-content: space-between;
-      }
-
+      
       .home-recipe-results-pagination {
          width: 100%;
          display: flex;
          justify-content: center;
+      }
+   }
+   
+   .home-recipe-results-header {
+      background-color: @whiteColor;
+      padding: 1rem;
+      border-radius: 8px;
+      display: flex;
+      justify-content: space-between;
+
+      select { 
+         outline: none;
+         border: 1px solid @primaryColor;
+         border-radius: 8px;
+         padding: 6px 8px;
+         font-family: @baseFonFamily;
+         font-size: 16px;
+
+         &:focus {
+            outline: none;
+         }
+
+         &:focus-visible {
+            outline: 2px solid @primaryColor;
+         }
+
+         &:hover {
+            cursor: pointer;
+         }
       }
    }
 
