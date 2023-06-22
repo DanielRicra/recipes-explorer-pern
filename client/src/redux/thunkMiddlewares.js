@@ -17,3 +17,19 @@ export const setSearchRecipes = (searchQuery) => {
       }
    };
 };
+
+export const setAllRecipes = () => {
+   return async (dispatch) => {
+      try {
+         dispatch(fetchStart());
+         const data = await recipeService.getAllRecipes({ limit: 27 });
+         dispatch(setRecipes(data.results));
+      } catch (error) {
+         if (error instanceof AxiosError) {
+            dispatch(fetchError(error.response?.data.error));
+            return;
+         }
+         dispatch(fetchError(error.message));
+      }
+   };
+};
