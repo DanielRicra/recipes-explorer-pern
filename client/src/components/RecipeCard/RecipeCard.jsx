@@ -14,7 +14,12 @@ const RecipeCard = ({ recipe }) => {
    return (
       <div className='recipe-card' onClick={handleCardClick}>
          <figure>
-            <img src={recipe.image} alt={recipe.title ?? recipe.name} loading='lazy' />
+            <img
+               src={recipe.image}
+               alt={recipe.title ?? recipe.name}
+               loading='lazy'
+               data-testid='recipe-card-image'
+            />
          </figure>
 
          <div className='recipe-card-content'>
@@ -39,12 +44,14 @@ const RecipeCard = ({ recipe }) => {
                </p>
             </div>
 
-            <div className='recipe-card-diets'>
+            <div className='recipe-card-diets' data-testid='recipe-card-diets'>
                {recipe.diets?.length === 0 ? (
                   <span>omnivore</span>
                ) : (
                   recipe.diets?.map((diet, index) => (
-                     <span key={index}>{diet}</span>
+                     <span key={index} data-testid='recipe-card-diet'>
+                        {diet}
+                     </span>
                   ))
                )}
             </div>
