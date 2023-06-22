@@ -2,6 +2,7 @@ import { useNavigate } from 'react-router-dom';
 
 import { ReactComponent as Chronometer } from '../../assets/chronometer.svg';
 import { ReactComponent as Flame } from '../../assets/flame-2.svg';
+import defaultImg from '../../assets/default.jpg';
 import './recipeCard.less';
 
 const RecipeCard = ({ recipe }) => {
@@ -19,6 +20,12 @@ const RecipeCard = ({ recipe }) => {
                alt={recipe.title ?? recipe.name}
                loading='lazy'
                data-testid='recipe-card-image'
+               onError={({ currentTarget }) => {
+                  currentTarget.onerror = null;
+                  currentTarget.src = defaultImg;
+                  currentTarget.alt = 'Default Image';
+                  currentTarget.title = 'Default Image';
+               }}
             />
          </figure>
 
