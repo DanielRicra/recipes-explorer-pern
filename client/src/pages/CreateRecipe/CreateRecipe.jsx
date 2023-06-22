@@ -7,7 +7,6 @@ import IngredientList from './components/IngredientList';
 import Instructions from './components/Instructions';
 import RecipeForm from './components/RecipeForm';
 import { INITIAL_STATE, recipeFormReducer } from './recipeFormReducer';
-import './createRecipe.less';
 import { validateRecipe } from '../../utils/validations';
 import recipeService from '../../services/recipeService';
 import {
@@ -16,6 +15,7 @@ import {
 } from './recipeReducer';
 import { actionTypes } from '../../utils/constants';
 import { ACTION_TYPES } from './recipeFormActionTypes';
+import './createRecipe.less';
 
 const CreateRecipe = () => {
    const [state, dispatchRecipe] = useReducer(recipeFormReducer, INITIAL_STATE);
@@ -115,7 +115,7 @@ const CreateRecipe = () => {
                   )}
                </div>
 
-               <button type='submit' className='button'>
+               <button type='submit' className='button' disabled={stateCreate.loading}>
                   {stateCreate.loading ? 'Creating...' : 'Create Recipe'}
                </button>
                {stateCreate.error && (
