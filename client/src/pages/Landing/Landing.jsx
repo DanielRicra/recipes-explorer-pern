@@ -15,7 +15,7 @@ const Landing = () => {
    return (
       <div className='landing' style={{ minHeight: window.innerHeight - 93 }}>
          <div className='landing-info'>
-            <h1>Lets&apos;s cook with the most delicious recipes</h1>
+            <h1>Let&apos;s cook with the most delicious recipes</h1>
             <p>
                Start learning how to cook with us today! We will guide you
                through the process of cooking with us and you will be able to
