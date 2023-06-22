@@ -5,15 +5,14 @@ import { useEffect } from 'react';
 
 import { Landing, Home, RecipeDetail, CreateRecipe, NotFound } from './pages';
 import { NavBar } from './components';
-import recipesData from './utils/recipesData.json';
-import { setRecipes } from './redux/actions';
+import { setAllRecipes } from './redux/thunkMiddlewares';
 import './App.less';
 
 function App() {
    const dispatch = useDispatch();
 
    useEffect(() => {
-      dispatch(setRecipes(recipesData));
+      dispatch(setAllRecipes());
    }, []);
 
    return (
