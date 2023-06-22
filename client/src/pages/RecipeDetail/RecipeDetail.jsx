@@ -163,7 +163,7 @@ const RecipeDetail = () => {
                         />
                      </div>
                      <p>{ingredient.name}</p>
-                     <span>{`${ingredient.amount} ${ingredient.unit}`}</span>
+                     <span>{`${parseFloat(ingredient.amount)} ${ingredient.unit}`}</span>
                   </li>
                ))}
             </ul>
