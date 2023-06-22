@@ -6,6 +6,7 @@ import { ReactComponent as IconTimer } from '../../assets/chronometer.svg';
 import recipeService from '../../services/recipeService';
 import { INITIAL_STATE, recipeReducer } from './recipeReducer';
 import { actionTypes } from '../../utils/constants';
+import defaultImg from '../../assets/default.jpg';
 import './recipeDetail.less';
 
 const TimeCard = ({ title, time, timeUnit }) => {
@@ -90,7 +91,9 @@ const RecipeDetail = () => {
       <div className='recipe-detail'>
          <section className='recipe-detail-header'>
             <div className='recipe-detail-header-info'>
-               <h1 className='recipe-detail-title'>{state.recipe.title}</h1>
+               <h1 className='recipe-detail-title'>
+                  {state.recipe.title ?? state.recipe.name}
+               </h1>
                <p className='recipe-detail-summary'>
                   {state.recipe.summary?.replace(/<[^>]+>/g, '')}
                </p>
@@ -122,10 +125,20 @@ const RecipeDetail = () => {
 
             <div className='recipe-detail-image'>
                <img
-                  src={`https://spoonacular.com/recipeImages/${state.recipe.id}-636x393.jpg`}
-                  alt={state.recipe.title}
+                  src={
+                     state.recipe.title
+                        ? `https://spoonacular.com/recipeImages/${state.recipe.id}-636x393.jpg`
+                        : state.recipe.image
+                  }
+                  alt={state.recipe.title ?? state.recipe.name}
                   width={636}
                   height={393}
+                  onError={({ currentTarget }) => {
+                     currentTarget.onerror = null;
+                     currentTarget.src = defaultImg;
+                     currentTarget.alt = 'Default Image';
+                     currentTarget.title = 'Default Image';
+                  }}
                />
             </div>
          </section>
@@ -138,7 +151,11 @@ const RecipeDetail = () => {
                   <li key={index}>
                      <div className='ingredient-image'>
                         <img
-                           src={`http://spoonacular.com/cdn/ingredients_100x100/${ingredient.image}`}
+                           src={
+                              state.recipe.title
+                                 ? `http://spoonacular.com/cdn/ingredients_100x100/${ingredient.image}`
+                                 : ingredient.image
+                           }
                            alt={ingredient.name}
                            width={100}
                            height={100}
